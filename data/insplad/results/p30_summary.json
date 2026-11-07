@@ -1,0 +1,118 @@
+{
+ "n_questions": 2200,
+ "n_images": 1572,
+ "systems": {
+  "ours": {
+   "answered": 2200,
+   "accuracy": 94.1818,
+   "by_type": {
+    "cls": 99.1667,
+    "exist": 96.4,
+    "count": 85.5
+   },
+   "input_tokens_mean": 731.2,
+   "input_tokens_max": 866,
+   "visual_tokens_mean": 576.0
+  },
+  "ins": {
+   "answered": 2200,
+   "accuracy": 91.9091,
+   "by_type": {
+    "cls": 98.6667,
+    "exist": 93.1,
+    "count": 83.1667
+   },
+   "input_tokens_mean": 731.2,
+   "input_tokens_max": 866,
+   "visual_tokens_mean": 576.0
+  },
+  "gt": {
+   "answered": 2200,
+   "accuracy": 90.8182,
+   "by_type": {
+    "cls": 98.1667,
+    "exist": 94.6,
+    "count": 77.1667
+   },
+   "input_tokens_mean": 731.2,
+   "input_tokens_max": 866,
+   "visual_tokens_mean": 576.0
+  },
+  "w576": {
+   "answered": 2200,
+   "accuracy": 92.5455,
+   "by_type": {
+    "cls": 97.6667,
+    "exist": 94.1,
+    "count": 84.8333
+   },
+   "input_tokens_mean": 633.5,
+   "input_tokens_max": 667,
+   "visual_tokens_mean": 576.0
+  },
+  "rules": {
+   "answered": 2200,
+   "accuracy": 92.5455,
+   "by_type": {
+    "cls": 99.3333,
+    "exist": 94.7,
+    "count": 82.1667
+   },
+   "input_tokens_mean": null,
+   "input_tokens_max": null,
+   "visual_tokens_mean": null
+  }
+ },
+ "pairs": {
+  "ours-w576": {
+   "n": 2200,
+   "diff": 1.6364,
+   "ci95": [
+    0.6404,
+    2.64
+   ],
+   "a_right_b_wrong": 78,
+   "a_wrong_b_right": 42
+  },
+  "ours-rules": {
+   "n": 2200,
+   "diff": 1.6364,
+   "ci95": [
+    0.6856,
+    2.6438
+   ],
+   "a_right_b_wrong": 76,
+   "a_wrong_b_right": 40
+  },
+  "ours-ins": {
+   "n": 2200,
+   "diff": 2.2727,
+   "ci95": [
+    1.448,
+    3.1107
+   ],
+   "a_right_b_wrong": 70,
+   "a_wrong_b_right": 20
+  },
+  "ours-gt": {
+   "n": 2200,
+   "diff": 3.3636,
+   "ci95": [
+    2.4977,
+    4.3557
+   ],
+   "a_right_b_wrong": 98,
+   "a_wrong_b_right": 24
+  },
+  "ins-gt": {
+   "n": 2200,
+   "diff": 1.0909,
+   "ci95": [
+    0.0895,
+    2.1779
+   ],
+   "a_right_b_wrong": 86,
+   "a_wrong_b_right": 62
+  }
+ }
+}

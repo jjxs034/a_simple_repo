@@ -1,0 +1,79 @@
+{
+ "_about": "Training settings of every adapter in the paper. Each value is copied from the code; '_source' gives file:line in this repository.",
+ "base_models": {
+  "4B": "Qwen/Qwen3-VL-4B-Instruct",
+  "2B": "Qwen/Qwen3-VL-2B-Instruct",
+  "_source": "scripts/final_round.sh:61-66 (function model); powerbrain/core.py:455-457 loads them with transformers"
+ },
+ "lora": {
+  "rank": 16,
+  "alpha": 32,
+  "dropout": 0.05,
+  "bias": "none",
+  "target_modules": ".*language_model.*\\.(q_proj|k_proj|v_proj|o_proj|gate_proj|up_proj|down_proj)",
+  "vision_encoder": "frozen (the target modules lie in the language model only)",
+  "_source": "powerbrain/train_lora.py:243 (rank 16), :261 (alpha = 2 x rank, dropout 0.05, bias none), :262 (target modules)"
+ },
+ "optimizer": {
+  "name": "AdamW",
+  "learning_rate": 0.0001,
+  "weight_decay": 0.0,
+  "schedule": "cosine with warm-up of max(10, total_steps // 20) steps",
+  "_source": "powerbrain/train_lora.py:242 (lr), :306 (AdamW, weight decay 0), :309 (cosine schedule and warm-up)"
+ },
+ "epochs": 1.0,
+ "_source_epochs": "powerbrain/train_lora.py:241",
+ "precision": "bf16 (accelerate --mixed_precision bf16)",
+ "_source_precision": "scripts/final_round.sh:218; scripts/pub_insplad.sh:80",
+ "effective_batch": 4,
+ "_source_effective_batch": "scripts/final_round.sh:22 (GPUs x gradient-accumulation steps = 4)",
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "_source_seeds": "scripts/final_round.sh (adapters f_*_s0, f_*_s1, f_*_s2); powerbrain/train_lora.py:246 (--seed)",
+ "training_input_formats": {
+  "pack": {
+   "list_and_thumbnail": 0.8,
+   "thumbnail_576_tokens_without_list": 0.2,
+   "_note": "the share 0.2 is the list-dropping rate nu of Algorithm 1",
+   "_source": "powerbrain/train_lora.py:33 PACK = [('selector', 0.8), ('u576', 0.2)]"
+  },
+  "u576only": {
+   "whole_image_576_tokens": 1.0,
+   "_source": "powerbrain/train_lora.py:37 (576-token whole-image baseline)"
+  }
+ },
+ "tiers": {
+  "4B_tier1_list_and_thumbnail": {
+   "adapter": "f_one576_s{0,1,2}",
+   "thumbnail_tokens": 576,
+   "_source": "scripts/final_round.sh:367"
+  },
+  "4B_tier0_list_only": {
+   "adapter": "f_list_s{0,1,2}",
+   "thumbnail_tokens": 0,
+   "_source": "scripts/final_round.sh:368"
+  },
+  "2B_tier1_list_and_thumbnail": {
+   "adapter": "f_onen2b_s{0,1,2}",
+   "thumbnail_tokens": 256,
+   "_source": "scripts/final_round.sh:369"
+  },
+  "2B_tier0_list_only": {
+   "adapter": "f_listn2b_s{0,1,2}",
+   "thumbnail_tokens": 0,
+   "_source": "scripts/final_round.sh:370"
+  },
+  "_note": "4B rows use the medium detector, 2B rows the nano detector (cands_*_v1 and cands_*_nano, scripts/final_round.sh:54-56, used at :175-178)"
+ },
+ "final_round_switches": {
+  "FMT": 3,
+  "THUMB": 576,
+  "STATE": 0,
+  "AUG": "aug_s0",
+  "AUGBASE": 1,
+  "_source": "written once with `bash scripts/final_round.sh config ...`; the accepted values are checked at scripts/final_round.sh:385-386, the meaning of each switch is at scripts/final_round.sh:9-14; the values used are those of the authors' run record"
+ }
+}

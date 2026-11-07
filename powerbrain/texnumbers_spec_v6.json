@@ -1,0 +1,4031 @@
+[
+ {
+  "macro": "ours",
+  "src": "main",
+  "row": "本文（4B）",
+  "what": "acc"
+ },
+ {
+  "macro": "oursCi",
+  "src": "main",
+  "row": "本文（4B）",
+  "what": "ci"
+ },
+ {
+  "macro": "oursSd",
+  "src": "main",
+  "row": "本文（4B）",
+  "what": "sd"
+ },
+ {
+  "macro": "oursTok",
+  "src": "main",
+  "row": "本文（4B）",
+  "what": "tok"
+ },
+ {
+  "macro": "list",
+  "src": "main",
+  "row": "只读清单（4B）",
+  "what": "acc"
+ },
+ {
+  "macro": "listCi",
+  "src": "main",
+  "row": "只读清单（4B）",
+  "what": "ci"
+ },
+ {
+  "macro": "listDiff",
+  "src": "main",
+  "row": "只读清单（4B）",
+  "what": "diff"
+ },
+ {
+  "macro": "edgeThumb",
+  "src": "main",
+  "row": "端侧配置，带缩略图（2B，纳米分支）",
+  "what": "acc"
+ },
+ {
+  "macro": "edgeThumbCi",
+  "src": "main",
+  "row": "端侧配置，带缩略图（2B，纳米分支）",
+  "what": "ci"
+ },
+ {
+  "macro": "edgeThumbDiff",
+  "src": "main",
+  "row": "端侧配置，带缩略图（2B，纳米分支）",
+  "what": "diff"
+ },
+ {
+  "macro": "edge",
+  "src": "main",
+  "row": "端侧配置，只读清单（2B，纳米分支）",
+  "what": "acc"
+ },
+ {
+  "macro": "edgeCi",
+  "src": "main",
+  "row": "端侧配置，只读清单（2B，纳米分支）",
+  "what": "ci"
+ },
+ {
+  "macro": "edgeDiff",
+  "src": "main",
+  "row": "端侧配置，只读清单（2B，纳米分支）",
+  "what": "diff"
+ },
+ {
+  "macro": "wholeLo",
+  "src": "main",
+  "row": "整图 576 令牌（4B）",
+  "what": "acc"
+ },
+ {
+  "macro": "wholeLoCi",
+  "src": "main",
+  "row": "整图 576 令牌（4B）",
+  "what": "ci"
+ },
+ {
+  "macro": "wholeLoDiff",
+  "src": "main",
+  "row": "整图 576 令牌（4B）",
+  "what": "diff"
+ },
+ {
+  "macro": "wholeHi",
+  "src": "main",
+  "row": "整图原始分辨率（4B）",
+  "what": "acc"
+ },
+ {
+  "macro": "wholeHiCi",
+  "src": "main",
+  "row": "整图原始分辨率（4B）",
+  "what": "ci"
+ },
+ {
+  "macro": "wholeHiDiff",
+  "src": "main",
+  "row": "整图原始分辨率（4B）",
+  "what": "diff"
+ },
+ {
+  "macro": "wholeHiTok",
+  "src": "main",
+  "row": "整图原始分辨率（4B）",
+  "what": "tok"
+ },
+ {
+  "macro": "rule",
+  "src": "main",
+  "row": "检测分支按规则",
+  "what": "acc"
+ },
+ {
+  "macro": "ruleCi",
+  "src": "main",
+  "row": "检测分支按规则",
+  "what": "ci"
+ },
+ {
+  "macro": "ruleDiff",
+  "src": "main",
+  "row": "检测分支按规则",
+  "what": "diff"
+ },
+ {
+  "macro": "agg",
+  "src": "main",
+  "row": "检测分支 + 小汇总网络",
+  "what": "acc"
+ },
+ {
+  "macro": "aggCi",
+  "src": "main",
+  "row": "检测分支 + 小汇总网络",
+  "what": "ci"
+ },
+ {
+  "macro": "aggDiff",
+  "src": "main",
+  "row": "检测分支 + 小汇总网络",
+  "what": "diff"
+ },
+ {
+  "macro": "ablThumb",
+  "src": "main",
+  "row": [
+   "缩略图 576 令牌",
+   "缩略图 256 令牌"
+  ],
+  "what": "acc"
+ },
+ {
+  "macro": "ablThumbDiff",
+  "src": "main",
+  "row": [
+   "缩略图 576 令牌",
+   "缩略图 256 令牌"
+  ],
+  "what": "diff"
+ },
+ {
+  "macro": "ablThumbTok",
+  "src": "main",
+  "row": [
+   "缩略图 576 令牌",
+   "缩略图 256 令牌"
+  ],
+  "what": "tok"
+ },
+ {
+  "macro": "ablWording",
+  "src": "main",
+  "row": [
+   "标准文字清单",
+   "紧凑文字清单"
+  ],
+  "what": "acc"
+ },
+ {
+  "macro": "ablWordingDiff",
+  "src": "main",
+  "row": [
+   "标准文字清单",
+   "紧凑文字清单"
+  ],
+  "what": "diff"
+ },
+ {
+  "macro": "ablNoAug",
+  "src": "main",
+  "row": "不做退化感知的对齐",
+  "what": "acc"
+ },
+ {
+  "macro": "ablNoAugDiff",
+  "src": "main",
+  "row": "不做退化感知的对齐",
+  "what": "diff"
+ },
+ {
+  "macro": "ablImgAug",
+  "src": "main",
+  "row": "只退化图像，清单取干净图像",
+  "what": "acc"
+ },
+ {
+  "macro": "ablImgAugDiff",
+  "src": "main",
+  "row": "只退化图像，清单取干净图像",
+  "what": "diff"
+ },
+ {
+  "macro": "ablIns",
+  "src": "main",
+  "row": "样本内清单训练",
+  "what": "acc"
+ },
+ {
+  "macro": "ablInsDiff",
+  "src": "main",
+  "row": "样本内清单训练",
+  "what": "diff"
+ },
+ {
+  "macro": "ablGt",
+  "src": "main",
+  "row": "人工框清单训练",
+  "what": "acc"
+ },
+ {
+  "macro": "ablGtDiff",
+  "src": "main",
+  "row": "人工框清单训练",
+  "what": "diff"
+ },
+ {
+  "macro": "prior",
+  "src": "main",
+  "row": "最接近已有工作的接口",
+  "what": "acc"
+ },
+ {
+  "macro": "priorDiff",
+  "src": "main",
+  "row": "最接近已有工作的接口",
+  "what": "diff"
+ },
+ {
+  "macro": "oursSmall",
+  "src": "main",
+  "row": "2B，中型分支，带缩略图",
+  "what": "acc"
+ },
+ {
+  "macro": "oursSmallDiff",
+  "src": "main",
+  "row": "2B，中型分支，带缩略图",
+  "what": "diff"
+ },
+ {
+  "macro": "listSmall",
+  "src": "main",
+  "row": "2B，中型分支，只读清单",
+  "what": "acc"
+ },
+ {
+  "macro": "listSmallDiff",
+  "src": "main",
+  "row": "2B，中型分支，只读清单",
+  "what": "diff"
+ },
+ {
+  "macro": "oursNano",
+  "src": "main",
+  "row": "4B，纳米分支，带缩略图",
+  "what": "acc"
+ },
+ {
+  "macro": "oursNanoDiff",
+  "src": "main",
+  "row": "4B，纳米分支，带缩略图",
+  "what": "diff"
+ },
+ {
+  "macro": "wholeLoSmall",
+  "src": "main",
+  "row": "整图 576 令牌（2B）",
+  "what": "acc"
+ },
+ {
+  "macro": "wholeHiSmall",
+  "src": "main",
+  "row": "整图原始分辨率（2B）",
+  "what": "acc"
+ },
+ {
+  "macro": "vis",
+  "src": "main",
+  "row": "整图原始分辨率，视觉编码器一并适配",
+  "what": "acc"
+ },
+ {
+  "macro": "visDiff",
+  "src": "main",
+  "row": "整图原始分辨率，视觉编码器一并适配",
+  "what": "diff"
+ },
+ {
+  "macro": "dResDiff",
+  "src": "res",
+  "row": "整图 576 令牌（4B）",
+  "what": "diff"
+ },
+ {
+  "macro": "dResOursDiff",
+  "src": "res",
+  "row": "本文（4B）",
+  "what": "diff"
+ },
+ {
+  "macro": "dVisDiff",
+  "src": "res",
+  "row": "整图原始分辨率，视觉编码器一并适配",
+  "what": "diff"
+ },
+ {
+  "macro": "edgeVsThumbDiff",
+  "src": "edge",
+  "row": "端侧配置，带缩略图（2B，纳米分支）",
+  "what": "diff"
+ },
+ {
+  "macro": "edgeVsWholeDiff",
+  "src": "edge",
+  "row": "整图 576 令牌（2B）",
+  "what": "diff"
+ },
+ {
+  "macro": "oursIn",
+  "src": "main",
+  "row": "本文（4B）",
+  "what": "inp"
+ },
+ {
+  "macro": "listIn",
+  "src": "main",
+  "row": "只读清单（4B）",
+  "what": "inp"
+ },
+ {
+  "macro": "wholeLoIn",
+  "src": "main",
+  "row": "整图 576 令牌（4B）",
+  "what": "inp"
+ },
+ {
+  "macro": "wholeHiIn",
+  "src": "main",
+  "row": "整图原始分辨率（4B）",
+  "what": "inp"
+ },
+ {
+  "macro": "edgeIn",
+  "src": "main",
+  "row": "端侧配置，只读清单（2B，纳米分支）",
+  "what": "inp"
+ },
+ {
+  "macro": "edgeThumbIn",
+  "src": "main",
+  "row": "端侧配置，带缩略图（2B，纳米分支）",
+  "what": "inp"
+ },
+ {
+  "macro": "wholeLoTok",
+  "src": "main",
+  "row": "整图 576 令牌（4B）",
+  "what": "tok"
+ },
+ {
+  "macro": "edgeThumbTok",
+  "src": "main",
+  "row": "端侧配置，带缩略图（2B，纳米分支）",
+  "what": "tok"
+ },
+ {
+  "macro": "pruneHalf",
+  "src": "main",
+  "row": "整图原始分辨率，剪枝留 50%",
+  "what": "acc"
+ },
+ {
+  "macro": "pruneHalfCi",
+  "src": "main",
+  "row": "整图原始分辨率，剪枝留 50%",
+  "what": "ci"
+ },
+ {
+  "macro": "pruneHalfDiff",
+  "src": "main",
+  "row": "整图原始分辨率，剪枝留 50%",
+  "what": "diff"
+ },
+ {
+  "macro": "pruneTok",
+  "src": "main",
+  "row": "整图原始分辨率，剪到 576 个令牌",
+  "what": "acc"
+ },
+ {
+  "macro": "pruneTokCi",
+  "src": "main",
+  "row": "整图原始分辨率，剪到 576 个令牌",
+  "what": "ci"
+ },
+ {
+  "macro": "pruneTokDiff",
+  "src": "main",
+  "row": "整图原始分辨率，剪到 576 个令牌",
+  "what": "diff"
+ },
+ {
+  "macro": "aggAug",
+  "src": "main",
+  "row": "检测分支 + 小汇总网络（带退化的训练清单）",
+  "what": "acc"
+ },
+ {
+  "macro": "aggAugCi",
+  "src": "main",
+  "row": "检测分支 + 小汇总网络（带退化的训练清单）",
+  "what": "ci"
+ },
+ {
+  "macro": "aggAugDiff",
+  "src": "main",
+  "row": "检测分支 + 小汇总网络（带退化的训练清单）",
+  "what": "diff"
+ },
+ {
+  "macro": "untunedLo",
+  "src": "main",
+  "row": "未微调 4B，576 令牌",
+  "what": "acc"
+ },
+ {
+  "macro": "untunedLoDiff",
+  "src": "main",
+  "row": "未微调 4B，576 令牌",
+  "what": "diff"
+ },
+ {
+  "macro": "untunedHi",
+  "src": "main",
+  "row": "未微调 4B，原始分辨率",
+  "what": "acc"
+ },
+ {
+  "macro": "untunedHiDiff",
+  "src": "main",
+  "row": "未微调 4B，原始分辨率",
+  "what": "diff"
+ },
+ {
+  "macro": "wholeLoSmallCi",
+  "src": "main",
+  "row": "整图 576 令牌（2B）",
+  "what": "ci"
+ },
+ {
+  "macro": "wholeLoSmallDiff",
+  "src": "main",
+  "row": "整图 576 令牌（2B）",
+  "what": "diff"
+ },
+ {
+  "macro": "wholeHiSmallCi",
+  "src": "main",
+  "row": "整图原始分辨率（2B）",
+  "what": "ci"
+ },
+ {
+  "macro": "wholeHiSmallDiff",
+  "src": "main",
+  "row": "整图原始分辨率（2B）",
+  "what": "diff"
+ },
+ {
+  "macro": "oursSmallCi",
+  "src": "main",
+  "row": "2B，中型分支，带缩略图",
+  "what": "ci"
+ },
+ {
+  "macro": "listSmallCi",
+  "src": "main",
+  "row": "2B，中型分支，只读清单",
+  "what": "ci"
+ },
+ {
+  "macro": "oursNanoCi",
+  "src": "main",
+  "row": "4B，纳米分支，带缩略图",
+  "what": "ci"
+ },
+ {
+  "macro": "visCi",
+  "src": "main",
+  "row": "整图原始分辨率，视觉编码器一并适配",
+  "what": "ci"
+ },
+ {
+  "macro": "aggSd",
+  "src": "main",
+  "row": "检测分支 + 小汇总网络",
+  "what": "sd"
+ },
+ {
+  "macro": "nQ",
+  "src": "tables",
+  "file": "dupeffect",
+  "heading": "{sc}：测试题按",
+  "row": "题数（图像数）",
+  "col": "全部",
+  "what": "count"
+ },
+ {
+  "macro": "nImg",
+  "src": "tables",
+  "file": "dupeffect",
+  "heading": "{sc}：测试题按",
+  "row": "题数（图像数）",
+  "col": "全部",
+  "what": "pcount"
+ },
+ {
+  "macro": "nQnodup",
+  "src": "tables",
+  "file": "dupeffect",
+  "heading": "{sc}：测试题按",
+  "row": "题数（图像数）",
+  "col": "无近重复",
+  "what": "count"
+ },
+ {
+  "macro": "nImgnodup",
+  "src": "tables",
+  "file": "dupeffect",
+  "heading": "{sc}：测试题按",
+  "row": "题数（图像数）",
+  "col": "无近重复",
+  "what": "pcount"
+ },
+ {
+  "macro": "nodupOurs",
+  "src": "tables",
+  "file": "dupeffect",
+  "heading": "{sc}：测试题按",
+  "row": "本文（4B）",
+  "col": "无近重复",
+  "what": "num"
+ },
+ {
+  "macro": "nodupVsHi",
+  "src": "tables",
+  "file": "dupeffect",
+  "heading": "{sc}：分层的配对差值",
+  "row": "本文（4B） − 整图原始分辨率（4B）",
+  "col": "无近重复",
+  "what": "diff"
+ },
+ {
+  "macro": "nodupVsLo",
+  "src": "tables",
+  "file": "dupeffect",
+  "heading": "{sc}：分层的配对差值",
+  "row": "本文（4B） − 整图 576 令牌（4B）",
+  "col": "无近重复",
+  "what": "diff"
+ },
+ {
+  "macro": "nodupVsAgg",
+  "src": "tables",
+  "file": "dupeffect",
+  "heading": "{sc}：分层的配对差值",
+  "row": "本文（4B） − 检测分支 + 小汇总网络",
+  "col": "无近重复",
+  "what": "diff"
+ },
+ {
+  "macro": "nodupVsRule",
+  "src": "tables",
+  "file": "dupeffect",
+  "heading": "{sc}：分层的配对差值",
+  "row": "本文（4B） − 检测分支按规则",
+  "col": "无近重复",
+  "what": "diff"
+ },
+ {
+  "macro": "sizeTinyVsLo",
+  "src": "tables",
+  "file": "strata_size",
+  "heading": "{sc}：按题目证据占画面",
+  "pair": "本文（4B） − 整图 576 令牌（4B）",
+  "label": "<0.2%"
+ },
+ {
+  "macro": "sizeMidVsLo",
+  "src": "tables",
+  "file": "strata_size",
+  "heading": "{sc}：按题目证据占画面",
+  "pair": "本文（4B） − 整图 576 令牌（4B）",
+  "label": "1–5%"
+ },
+ {
+  "macro": "sizeTinyVsHi",
+  "src": "tables",
+  "file": "strata_size",
+  "heading": "{sc}：按题目证据占画面",
+  "pair": "本文（4B） − 整图原始分辨率（4B）",
+  "label": "<0.2%"
+ },
+ {
+  "macro": "sizeTinyHiVsLo",
+  "src": "tables",
+  "file": "strata_size",
+  "heading": "{sc}：按题目证据占画面",
+  "pair": "整图原始分辨率（4B） − 整图 576 令牌（4B）",
+  "label": "<0.2%"
+ },
+ {
+  "macro": "sizeTinyVsAgg",
+  "src": "tables",
+  "file": "strata_size",
+  "heading": "{sc}：按题目证据占画面",
+  "pair": "本文（4B） − 检测分支 + 小汇总网络",
+  "label": "<0.2%"
+ },
+ {
+  "macro": "costOursMs",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "本文（4B）",
+  "col": "端到端 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costOursFwd",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "本文（4B）",
+  "col": "大模型前向",
+  "what": "num"
+ },
+ {
+  "macro": "costOursPn",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "本文（4B）",
+  "col": "90 分位 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costOursQps",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "本文（4B）",
+  "col": "吞吐 题/秒",
+  "what": "num"
+ },
+ {
+  "macro": "costOursMem",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "本文（4B）",
+  "col": "峰值显存 GiB",
+  "what": "num"
+ },
+ {
+  "macro": "costOursDet",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "本文（4B）",
+  "col": "其中：检测分支",
+  "what": "num"
+ },
+ {
+  "macro": "costOursGen",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "本文（4B）",
+  "col": "生成较长回答 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costListMs",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "只读清单（4B）",
+  "col": "端到端 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costListFwd",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "只读清单（4B）",
+  "col": "大模型前向",
+  "what": "num"
+ },
+ {
+  "macro": "costListPn",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "只读清单（4B）",
+  "col": "90 分位 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costListQps",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "只读清单（4B）",
+  "col": "吞吐 题/秒",
+  "what": "num"
+ },
+ {
+  "macro": "costListMem",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "只读清单（4B）",
+  "col": "峰值显存 GiB",
+  "what": "num"
+ },
+ {
+  "macro": "costListDet",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "只读清单（4B）",
+  "col": "其中：检测分支",
+  "what": "num"
+ },
+ {
+  "macro": "costListGen",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "只读清单（4B）",
+  "col": "生成较长回答 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costEdgeThumbMs",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "端侧配置，带缩略图（2B，纳米分支）",
+  "col": "端到端 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costEdgeThumbFwd",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "端侧配置，带缩略图（2B，纳米分支）",
+  "col": "大模型前向",
+  "what": "num"
+ },
+ {
+  "macro": "costEdgeThumbPn",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "端侧配置，带缩略图（2B，纳米分支）",
+  "col": "90 分位 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costEdgeThumbQps",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "端侧配置，带缩略图（2B，纳米分支）",
+  "col": "吞吐 题/秒",
+  "what": "num"
+ },
+ {
+  "macro": "costEdgeThumbMem",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "端侧配置，带缩略图（2B，纳米分支）",
+  "col": "峰值显存 GiB",
+  "what": "num"
+ },
+ {
+  "macro": "costEdgeThumbDet",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "端侧配置，带缩略图（2B，纳米分支）",
+  "col": "其中：检测分支",
+  "what": "num"
+ },
+ {
+  "macro": "costEdgeThumbGen",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "端侧配置，带缩略图（2B，纳米分支）",
+  "col": "生成较长回答 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costEdgeMs",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "端侧配置，只读清单（2B，纳米分支）",
+  "col": "端到端 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costEdgeFwd",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "端侧配置，只读清单（2B，纳米分支）",
+  "col": "大模型前向",
+  "what": "num"
+ },
+ {
+  "macro": "costEdgePn",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "端侧配置，只读清单（2B，纳米分支）",
+  "col": "90 分位 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costEdgeQps",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "端侧配置，只读清单（2B，纳米分支）",
+  "col": "吞吐 题/秒",
+  "what": "num"
+ },
+ {
+  "macro": "costEdgeMem",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "端侧配置，只读清单（2B，纳米分支）",
+  "col": "峰值显存 GiB",
+  "what": "num"
+ },
+ {
+  "macro": "costEdgeDet",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "端侧配置，只读清单（2B，纳米分支）",
+  "col": "其中：检测分支",
+  "what": "num"
+ },
+ {
+  "macro": "costEdgeGen",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "端侧配置，只读清单（2B，纳米分支）",
+  "col": "生成较长回答 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costWholeLoMs",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图 576 令牌（4B）",
+  "col": "端到端 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costWholeLoFwd",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图 576 令牌（4B）",
+  "col": "大模型前向",
+  "what": "num"
+ },
+ {
+  "macro": "costWholeLoPn",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图 576 令牌（4B）",
+  "col": "90 分位 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costWholeLoQps",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图 576 令牌（4B）",
+  "col": "吞吐 题/秒",
+  "what": "num"
+ },
+ {
+  "macro": "costWholeLoMem",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图 576 令牌（4B）",
+  "col": "峰值显存 GiB",
+  "what": "num"
+ },
+ {
+  "macro": "costWholeLoGen",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图 576 令牌（4B）",
+  "col": "生成较长回答 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costWholeHiMs",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图原始分辨率（4B）",
+  "col": "端到端 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costWholeHiFwd",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图原始分辨率（4B）",
+  "col": "大模型前向",
+  "what": "num"
+ },
+ {
+  "macro": "costWholeHiPn",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图原始分辨率（4B）",
+  "col": "90 分位 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costWholeHiQps",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图原始分辨率（4B）",
+  "col": "吞吐 题/秒",
+  "what": "num"
+ },
+ {
+  "macro": "costWholeHiMem",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图原始分辨率（4B）",
+  "col": "峰值显存 GiB",
+  "what": "num"
+ },
+ {
+  "macro": "costWholeHiGen",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图原始分辨率（4B）",
+  "col": "生成较长回答 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costPruneHalfMs",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图原始分辨率，剪枝留 50%（4B）",
+  "col": "端到端 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costPruneHalfFwd",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图原始分辨率，剪枝留 50%（4B）",
+  "col": "大模型前向",
+  "what": "num"
+ },
+ {
+  "macro": "costPruneHalfPn",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图原始分辨率，剪枝留 50%（4B）",
+  "col": "90 分位 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costPruneHalfQps",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图原始分辨率，剪枝留 50%（4B）",
+  "col": "吞吐 题/秒",
+  "what": "num"
+ },
+ {
+  "macro": "costPruneHalfMem",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图原始分辨率，剪枝留 50%（4B）",
+  "col": "峰值显存 GiB",
+  "what": "num"
+ },
+ {
+  "macro": "costVisMs",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图原始分辨率，视觉编码器一并适配（4B）",
+  "col": "端到端 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costVisFwd",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图原始分辨率，视觉编码器一并适配（4B）",
+  "col": "大模型前向",
+  "what": "num"
+ },
+ {
+  "macro": "costVisPn",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图原始分辨率，视觉编码器一并适配（4B）",
+  "col": "90 分位 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costVisQps",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图原始分辨率，视觉编码器一并适配（4B）",
+  "col": "吞吐 题/秒",
+  "what": "num"
+ },
+ {
+  "macro": "costVisMem",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图原始分辨率，视觉编码器一并适配（4B）",
+  "col": "峰值显存 GiB",
+  "what": "num"
+ },
+ {
+  "macro": "costVisGen",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图原始分辨率，视觉编码器一并适配（4B）",
+  "col": "生成较长回答 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costPruneTokMs",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图原始分辨率，剪到 576 个令牌（4B）",
+  "col": "端到端 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costPruneTokFwd",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图原始分辨率，剪到 576 个令牌（4B）",
+  "col": "大模型前向",
+  "what": "num"
+ },
+ {
+  "macro": "costPruneTokPn",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图原始分辨率，剪到 576 个令牌（4B）",
+  "col": "90 分位 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costPruneTokQps",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图原始分辨率，剪到 576 个令牌（4B）",
+  "col": "吞吐 题/秒",
+  "what": "num"
+ },
+ {
+  "macro": "costPruneTokMem",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图原始分辨率，剪到 576 个令牌（4B）",
+  "col": "峰值显存 GiB",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenOursMean",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：干净图像与 6 种",
+  "row": "本文（4B）",
+  "col": "退化平均",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenOursDrop",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：干净图像与 6 种",
+  "row": "本文（4B）",
+  "col": "平均下降",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenWholeLoMean",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：干净图像与 6 种",
+  "row": "整图 576 令牌（4B）",
+  "col": "退化平均",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenWholeLoDrop",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：干净图像与 6 种",
+  "row": "整图 576 令牌（4B）",
+  "col": "平均下降",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenWholeHiMean",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：干净图像与 6 种",
+  "row": "整图原始分辨率（4B）",
+  "col": "退化平均",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenWholeHiDrop",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：干净图像与 6 种",
+  "row": "整图原始分辨率（4B）",
+  "col": "平均下降",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenAggMean",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：干净图像与 6 种",
+  "row": "检测分支 + 小汇总网络",
+  "col": "退化平均",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenAggDrop",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：干净图像与 6 种",
+  "row": "检测分支 + 小汇总网络",
+  "col": "平均下降",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenAggAugMean",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：干净图像与 6 种",
+  "row": "检测分支 + 小汇总网络（带退化的训练清单）",
+  "col": "退化平均",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenAggAugDrop",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：干净图像与 6 种",
+  "row": "检测分支 + 小汇总网络（带退化的训练清单）",
+  "col": "平均下降",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenRuleMean",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：干净图像与 6 种",
+  "row": "检测分支按规则",
+  "col": "退化平均",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenRuleDrop",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：干净图像与 6 种",
+  "row": "检测分支按规则",
+  "col": "平均下降",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenRuleEnhMean",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：干净图像与 6 种",
+  "row": "检测分支按规则，前置图像增强",
+  "col": "退化平均",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenRuleEnhDrop",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：干净图像与 6 种",
+  "row": "检测分支按规则，前置图像增强",
+  "col": "平均下降",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenListMean",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：干净图像与 6 种",
+  "row": "只读清单（4B）",
+  "col": "退化平均",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenListDrop",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：干净图像与 6 种",
+  "row": "只读清单（4B）",
+  "col": "平均下降",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenThumbMean",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：干净图像与 6 种",
+  "row": "缩略图 256 令牌",
+  "col": "退化平均",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenThumbDrop",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：干净图像与 6 种",
+  "row": "缩略图 256 令牌",
+  "col": "平均下降",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenNoAugMean",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：干净图像与 6 种",
+  "row": "不做退化感知的对齐",
+  "col": "退化平均",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenNoAugDrop",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：干净图像与 6 种",
+  "row": "不做退化感知的对齐",
+  "col": "平均下降",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenImgAugMean",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：干净图像与 6 种",
+  "row": "只退化图像，清单取干净图像",
+  "col": "退化平均",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenImgAugDrop",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：干净图像与 6 种",
+  "row": "只退化图像，清单取干净图像",
+  "col": "平均下降",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenEdgeThumbMean",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：干净图像与 6 种",
+  "row": "端侧配置，带缩略图（2B，纳米分支）",
+  "col": "退化平均",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenEdgeThumbDrop",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：干净图像与 6 种",
+  "row": "端侧配置，带缩略图（2B，纳米分支）",
+  "col": "平均下降",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenEdgeMean",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：干净图像与 6 种",
+  "row": "端侧配置，只读清单（2B，纳米分支）",
+  "col": "退化平均",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenEdgeDrop",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：干净图像与 6 种",
+  "row": "端侧配置，只读清单（2B，纳米分支）",
+  "col": "平均下降",
+  "what": "num"
+ },
+ {
+  "macro": "robSeenVsLo",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "本文（4B） − 整图 576 令牌（4B）",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robSeenVsLoDrop",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "本文（4B） − 整图 576 令牌（4B）",
+  "label": "前者少掉"
+ },
+ {
+  "macro": "robSeenVsHi",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "本文（4B） − 整图原始分辨率（4B）",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robSeenVsHiDrop",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "本文（4B） − 整图原始分辨率（4B）",
+  "label": "前者少掉"
+ },
+ {
+  "macro": "robSeenVsAgg",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "本文（4B） − 检测分支 + 小汇总网络",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robSeenVsAggAug",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "本文（4B） − 检测分支 + 小汇总网络（带退化的训练清单）",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robSeenVsList",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "本文（4B） − 只读清单（4B）",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robSeenVsNoAug",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "本文（4B） − 不做退化感知的对齐",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robSeenVsImgAug",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "本文（4B） − 只退化图像，清单取干净图像",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robSeenVsThumb",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "本文（4B） − 缩略图 256 令牌",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robSeenVsRuleEnh",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "本文（4B） − 检测分支按规则，前置图像增强",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robSeenEdgeThumbVsEdge",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "端侧配置，带缩略图（2B，纳米分支） − 端侧配置，只读清单（2B，纳米分支）",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robSeenLoVsRule",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "整图 576 令牌（4B） − 检测分支按规则",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robSeenRuleEnhVsRule",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "检测分支按规则，前置图像增强 − 检测分支按规则",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robSeenListVsAggAug",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "只读清单（4B） − 检测分支 + 小汇总网络（带退化的训练清单）",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robSeenAggAugVsAgg",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "检测分支 + 小汇总网络（带退化的训练清单） − 检测分支 + 小汇总网络",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robHeldOursMean",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：干净图像与 3 种",
+  "row": "本文（4B）",
+  "col": "退化平均",
+  "what": "num"
+ },
+ {
+  "macro": "robHeldOursDrop",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：干净图像与 3 种",
+  "row": "本文（4B）",
+  "col": "平均下降",
+  "what": "num"
+ },
+ {
+  "macro": "robHeldWholeLoMean",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：干净图像与 3 种",
+  "row": "整图 576 令牌（4B）",
+  "col": "退化平均",
+  "what": "num"
+ },
+ {
+  "macro": "robHeldWholeLoDrop",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：干净图像与 3 种",
+  "row": "整图 576 令牌（4B）",
+  "col": "平均下降",
+  "what": "num"
+ },
+ {
+  "macro": "robHeldWholeHiMean",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：干净图像与 3 种",
+  "row": "整图原始分辨率（4B）",
+  "col": "退化平均",
+  "what": "num"
+ },
+ {
+  "macro": "robHeldWholeHiDrop",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：干净图像与 3 种",
+  "row": "整图原始分辨率（4B）",
+  "col": "平均下降",
+  "what": "num"
+ },
+ {
+  "macro": "robHeldAggMean",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：干净图像与 3 种",
+  "row": "检测分支 + 小汇总网络",
+  "col": "退化平均",
+  "what": "num"
+ },
+ {
+  "macro": "robHeldAggDrop",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：干净图像与 3 种",
+  "row": "检测分支 + 小汇总网络",
+  "col": "平均下降",
+  "what": "num"
+ },
+ {
+  "macro": "robHeldAggAugMean",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：干净图像与 3 种",
+  "row": "检测分支 + 小汇总网络（带退化的训练清单）",
+  "col": "退化平均",
+  "what": "num"
+ },
+ {
+  "macro": "robHeldAggAugDrop",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：干净图像与 3 种",
+  "row": "检测分支 + 小汇总网络（带退化的训练清单）",
+  "col": "平均下降",
+  "what": "num"
+ },
+ {
+  "macro": "robHeldRuleMean",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：干净图像与 3 种",
+  "row": "检测分支按规则",
+  "col": "退化平均",
+  "what": "num"
+ },
+ {
+  "macro": "robHeldRuleDrop",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：干净图像与 3 种",
+  "row": "检测分支按规则",
+  "col": "平均下降",
+  "what": "num"
+ },
+ {
+  "macro": "robHeldRuleEnhMean",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：干净图像与 3 种",
+  "row": "检测分支按规则，前置图像增强",
+  "col": "退化平均",
+  "what": "num"
+ },
+ {
+  "macro": "robHeldRuleEnhDrop",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：干净图像与 3 种",
+  "row": "检测分支按规则，前置图像增强",
+  "col": "平均下降",
+  "what": "num"
+ },
+ {
+  "macro": "robHeldListMean",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：干净图像与 3 种",
+  "row": "只读清单（4B）",
+  "col": "退化平均",
+  "what": "num"
+ },
+ {
+  "macro": "robHeldListDrop",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：干净图像与 3 种",
+  "row": "只读清单（4B）",
+  "col": "平均下降",
+  "what": "num"
+ },
+ {
+  "macro": "robHeldThumbMean",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：干净图像与 3 种",
+  "row": "缩略图 256 令牌",
+  "col": "退化平均",
+  "what": "num"
+ },
+ {
+  "macro": "robHeldThumbDrop",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：干净图像与 3 种",
+  "row": "缩略图 256 令牌",
+  "col": "平均下降",
+  "what": "num"
+ },
+ {
+  "macro": "robHeldNoAugMean",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：干净图像与 3 种",
+  "row": "不做退化感知的对齐",
+  "col": "退化平均",
+  "what": "num"
+ },
+ {
+  "macro": "robHeldNoAugDrop",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：干净图像与 3 种",
+  "row": "不做退化感知的对齐",
+  "col": "平均下降",
+  "what": "num"
+ },
+ {
+  "macro": "robHeldImgAugMean",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：干净图像与 3 种",
+  "row": "只退化图像，清单取干净图像",
+  "col": "退化平均",
+  "what": "num"
+ },
+ {
+  "macro": "robHeldImgAugDrop",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：干净图像与 3 种",
+  "row": "只退化图像，清单取干净图像",
+  "col": "平均下降",
+  "what": "num"
+ },
+ {
+  "macro": "robHeldEdgeThumbMean",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：干净图像与 3 种",
+  "row": "端侧配置，带缩略图（2B，纳米分支）",
+  "col": "退化平均",
+  "what": "num"
+ },
+ {
+  "macro": "robHeldEdgeThumbDrop",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：干净图像与 3 种",
+  "row": "端侧配置，带缩略图（2B，纳米分支）",
+  "col": "平均下降",
+  "what": "num"
+ },
+ {
+  "macro": "robHeldEdgeMean",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：干净图像与 3 种",
+  "row": "端侧配置，只读清单（2B，纳米分支）",
+  "col": "退化平均",
+  "what": "num"
+ },
+ {
+  "macro": "robHeldEdgeDrop",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：干净图像与 3 种",
+  "row": "端侧配置，只读清单（2B，纳米分支）",
+  "col": "平均下降",
+  "what": "num"
+ },
+ {
+  "macro": "robHeldVsLo",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：配对差值，3 种",
+  "pair": "本文（4B） − 整图 576 令牌（4B）",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robHeldVsLoDrop",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：配对差值，3 种",
+  "pair": "本文（4B） − 整图 576 令牌（4B）",
+  "label": "前者少掉"
+ },
+ {
+  "macro": "robHeldVsHi",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：配对差值，3 种",
+  "pair": "本文（4B） − 整图原始分辨率（4B）",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robHeldVsHiDrop",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：配对差值，3 种",
+  "pair": "本文（4B） − 整图原始分辨率（4B）",
+  "label": "前者少掉"
+ },
+ {
+  "macro": "robHeldVsAgg",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：配对差值，3 种",
+  "pair": "本文（4B） − 检测分支 + 小汇总网络",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robHeldVsAggAug",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：配对差值，3 种",
+  "pair": "本文（4B） − 检测分支 + 小汇总网络（带退化的训练清单）",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robHeldVsList",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：配对差值，3 种",
+  "pair": "本文（4B） − 只读清单（4B）",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robHeldVsNoAug",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：配对差值，3 种",
+  "pair": "本文（4B） − 不做退化感知的对齐",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robHeldVsImgAug",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：配对差值，3 种",
+  "pair": "本文（4B） − 只退化图像，清单取干净图像",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robHeldVsThumb",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：配对差值，3 种",
+  "pair": "本文（4B） − 缩略图 256 令牌",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robHeldVsRuleEnh",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：配对差值，3 种",
+  "pair": "本文（4B） − 检测分支按规则，前置图像增强",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robHeldEdgeThumbVsEdge",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：配对差值，3 种",
+  "pair": "端侧配置，带缩略图（2B，纳米分支） − 端侧配置，只读清单（2B，纳米分支）",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robHeldLoVsRule",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：配对差值，3 种",
+  "pair": "整图 576 令牌（4B） − 检测分支按规则",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robHeldRuleEnhVsRule",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：配对差值，3 种",
+  "pair": "检测分支按规则，前置图像增强 − 检测分支按规则",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robHeldListVsAggAug",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：配对差值，3 种",
+  "pair": "只读清单（4B） − 检测分支 + 小汇总网络（带退化的训练清单）",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "robHeldAggAugVsAgg",
+  "src": "tables",
+  "file": "robust_heldout",
+  "heading": "{sc}：配对差值，3 种",
+  "pair": "检测分支 + 小汇总网络（带退化的训练清单） − 检测分支 + 小汇总网络",
+  "label": "退化图像上"
+ },
+ {
+  "macro": "formRule",
+  "src": "tables",
+  "file": "forms",
+  "heading": "{sc}：三类基础问法之外",
+  "row": "人工规则读检测结果（每种问法各写一条）",
+  "col": "全部（95% 区间，按图像重采样）",
+  "what": "num"
+ },
+ {
+  "macro": "formRuleCi",
+  "src": "tables",
+  "file": "forms",
+  "heading": "{sc}：三类基础问法之外",
+  "row": "人工规则读检测结果（每种问法各写一条）",
+  "col": "全部（95% 区间，按图像重采样）",
+  "what": "ci"
+ },
+ {
+  "macro": "formBase",
+  "src": "tables",
+  "file": "forms",
+  "heading": "{sc}：三类基础问法之外",
+  "row": "本文，只训练基础问法",
+  "col": "全部（95% 区间，按图像重采样）",
+  "what": "num"
+ },
+ {
+  "macro": "formBaseCi",
+  "src": "tables",
+  "file": "forms",
+  "heading": "{sc}：三类基础问法之外",
+  "row": "本文，只训练基础问法",
+  "col": "全部（95% 区间，按图像重采样）",
+  "what": "ci"
+ },
+ {
+  "macro": "formHeld",
+  "src": "tables",
+  "file": "forms",
+  "heading": "{sc}：三类基础问法之外",
+  "row": "本文，多问法训练（该问法未参与训练）",
+  "col": "全部（95% 区间，按图像重采样）",
+  "what": "num"
+ },
+ {
+  "macro": "formHeldCi",
+  "src": "tables",
+  "file": "forms",
+  "heading": "{sc}：三类基础问法之外",
+  "row": "本文，多问法训练（该问法未参与训练）",
+  "col": "全部（95% 区间，按图像重采样）",
+  "what": "ci"
+ },
+ {
+  "macro": "formLoHeld",
+  "src": "tables",
+  "file": "forms",
+  "heading": "{sc}：三类基础问法之外",
+  "row": "整图 576 令牌，多问法训练（该问法未参与训练）",
+  "col": "全部（95% 区间，按图像重采样）",
+  "what": "num"
+ },
+ {
+  "macro": "formLoHeldCi",
+  "src": "tables",
+  "file": "forms",
+  "heading": "{sc}：三类基础问法之外",
+  "row": "整图 576 令牌，多问法训练（该问法未参与训练）",
+  "col": "全部（95% 区间，按图像重采样）",
+  "what": "ci"
+ },
+ {
+  "macro": "formHiHeld",
+  "src": "tables",
+  "file": "forms",
+  "heading": "{sc}：三类基础问法之外",
+  "row": "整图原始分辨率，多问法训练（该问法未参与训练）",
+  "col": "全部（95% 区间，按图像重采样）",
+  "what": "num"
+ },
+ {
+  "macro": "formHiHeldCi",
+  "src": "tables",
+  "file": "forms",
+  "heading": "{sc}：三类基础问法之外",
+  "row": "整图原始分辨率，多问法训练（该问法未参与训练）",
+  "col": "全部（95% 区间，按图像重采样）",
+  "what": "ci"
+ },
+ {
+  "macro": "formSeen",
+  "src": "tables",
+  "file": "forms",
+  "heading": "{sc}：三类基础问法之外",
+  "row": "本文，多问法训练（该问法参与了训练）",
+  "col": "全部（95% 区间，按图像重采样）",
+  "what": "num"
+ },
+ {
+  "macro": "formSeenCi",
+  "src": "tables",
+  "file": "forms",
+  "heading": "{sc}：三类基础问法之外",
+  "row": "本文，多问法训练（该问法参与了训练）",
+  "col": "全部（95% 区间，按图像重采样）",
+  "what": "ci"
+ },
+ {
+  "macro": "formHiSeen",
+  "src": "tables",
+  "file": "forms",
+  "heading": "{sc}：三类基础问法之外",
+  "row": "整图原始分辨率，多问法训练（该问法参与了训练）",
+  "col": "全部（95% 区间，按图像重采样）",
+  "what": "num"
+ },
+ {
+  "macro": "formHiSeenCi",
+  "src": "tables",
+  "file": "forms",
+  "heading": "{sc}：三类基础问法之外",
+  "row": "整图原始分辨率，多问法训练（该问法参与了训练）",
+  "col": "全部（95% 区间，按图像重采样）",
+  "what": "ci"
+ },
+ {
+  "macro": "formHeldVsBase",
+  "src": "tables",
+  "file": "forms",
+  "heading": "{sc}：配对差值",
+  "pair": "本文，多问法训练（该问法未参与训练） − 本文，只训练基础问法"
+ },
+ {
+  "macro": "formHeldVsRule",
+  "src": "tables",
+  "file": "forms",
+  "heading": "{sc}：配对差值",
+  "pair": "本文，多问法训练（该问法未参与训练） − 人工规则读检测结果（每种问法各写一条）"
+ },
+ {
+  "macro": "formHeldVsHi",
+  "src": "tables",
+  "file": "forms",
+  "heading": "{sc}：配对差值",
+  "pair": "本文，多问法训练（该问法未参与训练） − 整图原始分辨率，多问法训练（该问法未参与训练）"
+ },
+ {
+  "macro": "formBaseVsRule",
+  "src": "tables",
+  "file": "forms",
+  "heading": "{sc}：配对差值",
+  "pair": "本文，只训练基础问法 − 人工规则读检测结果（每种问法各写一条）"
+ },
+ {
+  "macro": "locoTowerZsHi",
+  "src": "tables",
+  "file": "loco",
+  "heading": "留出「TaDiao」",
+  "row": "未微调 4B，原始分辨率（本文对未覆盖类别的通路）",
+  "col": "全部（595）",
+  "what": "num",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "locoTowerZsLo",
+  "src": "tables",
+  "file": "loco",
+  "heading": "留出「TaDiao」",
+  "row": "未微调 4B，576 令牌",
+  "col": "全部（595）",
+  "what": "num",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "locoTowerOurs",
+  "src": "tables",
+  "file": "loco",
+  "heading": "留出「TaDiao」",
+  "row": "本文（没见过这一类）：清单 + 缩略图",
+  "col": "全部（595）",
+  "what": "num",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "locoTowerOursWhole",
+  "src": "tables",
+  "file": "loco",
+  "heading": "留出「TaDiao」",
+  "row": "本文（没见过这一类）：改看整图 576 令牌",
+  "col": "全部（595）",
+  "what": "num",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "locoTowerLo",
+  "src": "tables",
+  "file": "loco",
+  "heading": "留出「TaDiao」",
+  "row": "整图 576 令牌（没见过这一类）",
+  "col": "全部（595）",
+  "what": "num",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "locoTowerHi",
+  "src": "tables",
+  "file": "loco",
+  "heading": "留出「TaDiao」",
+  "row": "整图原始分辨率（没见过这一类）",
+  "col": "全部（595）",
+  "what": "num",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "locoTowerAgg",
+  "src": "tables",
+  "file": "loco",
+  "heading": "留出「TaDiao」",
+  "row": "小网络读清单（无大模型，没见过这一类）",
+  "col": "全部（595）",
+  "what": "num",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "locoTowerOvd",
+  "src": "tables",
+  "file": "loco",
+  "heading": "留出「TaDiao」",
+  "row": "开放词表检测器（阈值在不含该类的验证集上调）",
+  "col": "全部（595）",
+  "what": "num",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "locoTowerOvdUp",
+  "src": "tables",
+  "file": "loco",
+  "heading": "留出「TaDiao」",
+  "row": "开放词表检测器上界（阈值取测试集最优）",
+  "col": "全部（595）",
+  "what": "num",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "locoTowerOursSeen",
+  "src": "tables",
+  "file": "loco",
+  "heading": "留出「TaDiao」",
+  "row": "参照：本文（训练里有这一类）",
+  "col": "全部（595）",
+  "what": "num",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "locoTowerRuleSeen",
+  "src": "tables",
+  "file": "loco",
+  "heading": "留出「TaDiao」",
+  "row": "参照：检测分支按规则（训练里有这一类）",
+  "col": "全部（595）",
+  "what": "num",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "locoTowerZsHiCi",
+  "src": "tables",
+  "file": "loco",
+  "heading": "留出「TaDiao」",
+  "row": "未微调 4B，原始分辨率（本文对未覆盖类别的通路）",
+  "col": "全部（595）",
+  "what": "ci",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "locoMachZsHi",
+  "src": "tables",
+  "file": "loco",
+  "heading": "留出「ShiGongJiXie」",
+  "row": "未微调 4B，原始分辨率（本文对未覆盖类别的通路）",
+  "col": "全部（576）",
+  "what": "num",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "locoMachZsLo",
+  "src": "tables",
+  "file": "loco",
+  "heading": "留出「ShiGongJiXie」",
+  "row": "未微调 4B，576 令牌",
+  "col": "全部（576）",
+  "what": "num",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "locoMachOurs",
+  "src": "tables",
+  "file": "loco",
+  "heading": "留出「ShiGongJiXie」",
+  "row": "本文（没见过这一类）：清单 + 缩略图",
+  "col": "全部（576）",
+  "what": "num",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "locoMachOursWhole",
+  "src": "tables",
+  "file": "loco",
+  "heading": "留出「ShiGongJiXie」",
+  "row": "本文（没见过这一类）：改看整图 576 令牌",
+  "col": "全部（576）",
+  "what": "num",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "locoMachLo",
+  "src": "tables",
+  "file": "loco",
+  "heading": "留出「ShiGongJiXie」",
+  "row": "整图 576 令牌（没见过这一类）",
+  "col": "全部（576）",
+  "what": "num",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "locoMachHi",
+  "src": "tables",
+  "file": "loco",
+  "heading": "留出「ShiGongJiXie」",
+  "row": "整图原始分辨率（没见过这一类）",
+  "col": "全部（576）",
+  "what": "num",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "locoMachAgg",
+  "src": "tables",
+  "file": "loco",
+  "heading": "留出「ShiGongJiXie」",
+  "row": "小网络读清单（无大模型，没见过这一类）",
+  "col": "全部（576）",
+  "what": "num",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "locoMachOvd",
+  "src": "tables",
+  "file": "loco",
+  "heading": "留出「ShiGongJiXie」",
+  "row": "开放词表检测器（阈值在不含该类的验证集上调）",
+  "col": "全部（576）",
+  "what": "num",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "locoMachOvdUp",
+  "src": "tables",
+  "file": "loco",
+  "heading": "留出「ShiGongJiXie」",
+  "row": "开放词表检测器上界（阈值取测试集最优）",
+  "col": "全部（576）",
+  "what": "num",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "locoMachOursSeen",
+  "src": "tables",
+  "file": "loco",
+  "heading": "留出「ShiGongJiXie」",
+  "row": "参照：本文（训练里有这一类）",
+  "col": "全部（576）",
+  "what": "num",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "locoMachRuleSeen",
+  "src": "tables",
+  "file": "loco",
+  "heading": "留出「ShiGongJiXie」",
+  "row": "参照：检测分支按规则（训练里有这一类）",
+  "col": "全部（576）",
+  "what": "num",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "locoMachZsHiCi",
+  "src": "tables",
+  "file": "loco",
+  "heading": "留出「ShiGongJiXie」",
+  "row": "未微调 4B，原始分辨率（本文对未覆盖类别的通路）",
+  "col": "全部（576）",
+  "what": "ci",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "openOurs",
+  "src": "tables",
+  "file": "open",
+  "heading": "{sc}：开放式评测",
+  "row": "本文（4B）",
+  "col": "三类基础题合计",
+  "what": "num"
+ },
+ {
+  "macro": "openOursCi",
+  "src": "tables",
+  "file": "open",
+  "heading": "{sc}：开放式评测",
+  "row": "本文（4B）",
+  "col": "三类基础题合计",
+  "what": "ci"
+ },
+ {
+  "macro": "openOursCount",
+  "src": "tables",
+  "file": "open",
+  "heading": "{sc}：开放式评测",
+  "row": "本文（4B）",
+  "col": "清点",
+  "what": "num"
+ },
+ {
+  "macro": "openHi",
+  "src": "tables",
+  "file": "open",
+  "heading": "{sc}：开放式评测",
+  "row": "整图原始分辨率",
+  "col": "三类基础题合计",
+  "what": "num"
+ },
+ {
+  "macro": "openHiCi",
+  "src": "tables",
+  "file": "open",
+  "heading": "{sc}：开放式评测",
+  "row": "整图原始分辨率",
+  "col": "三类基础题合计",
+  "what": "ci"
+ },
+ {
+  "macro": "openHiCount",
+  "src": "tables",
+  "file": "open",
+  "heading": "{sc}：开放式评测",
+  "row": "整图原始分辨率",
+  "col": "清点",
+  "what": "num"
+ },
+ {
+  "macro": "openVsHi",
+  "src": "tables",
+  "file": "open",
+  "heading": "{sc}：开放式评测",
+  "row": "整图原始分辨率",
+  "col": "基础题：本文（4B） 减该行",
+  "what": "diff"
+ },
+ {
+  "macro": "openCountVsHi",
+  "src": "tables",
+  "file": "open",
+  "heading": "{sc}：开放式评测",
+  "row": "整图原始分辨率",
+  "col": "清点题：本文（4B） 减该行",
+  "what": "diff"
+ },
+ {
+  "macro": "openLo",
+  "src": "tables",
+  "file": "open",
+  "heading": "{sc}：开放式评测",
+  "row": "整图 576 令牌",
+  "col": "三类基础题合计",
+  "what": "num"
+ },
+ {
+  "macro": "openLoCi",
+  "src": "tables",
+  "file": "open",
+  "heading": "{sc}：开放式评测",
+  "row": "整图 576 令牌",
+  "col": "三类基础题合计",
+  "what": "ci"
+ },
+ {
+  "macro": "openLoCount",
+  "src": "tables",
+  "file": "open",
+  "heading": "{sc}：开放式评测",
+  "row": "整图 576 令牌",
+  "col": "清点",
+  "what": "num"
+ },
+ {
+  "macro": "openVsLo",
+  "src": "tables",
+  "file": "open",
+  "heading": "{sc}：开放式评测",
+  "row": "整图 576 令牌",
+  "col": "基础题：本文（4B） 减该行",
+  "what": "diff"
+ },
+ {
+  "macro": "openCountVsLo",
+  "src": "tables",
+  "file": "open",
+  "heading": "{sc}：开放式评测",
+  "row": "整图 576 令牌",
+  "col": "清点题：本文（4B） 减该行",
+  "what": "diff"
+ },
+ {
+  "macro": "openRule",
+  "src": "tables",
+  "file": "open",
+  "heading": "{sc}：开放式评测",
+  "row": "检测分支按规则（无语言模型）",
+  "col": "三类基础题合计",
+  "what": "num"
+ },
+ {
+  "macro": "openRuleCi",
+  "src": "tables",
+  "file": "open",
+  "heading": "{sc}：开放式评测",
+  "row": "检测分支按规则（无语言模型）",
+  "col": "三类基础题合计",
+  "what": "ci"
+ },
+ {
+  "macro": "openRuleCount",
+  "src": "tables",
+  "file": "open",
+  "heading": "{sc}：开放式评测",
+  "row": "检测分支按规则（无语言模型）",
+  "col": "清点",
+  "what": "num"
+ },
+ {
+  "macro": "openVsRule",
+  "src": "tables",
+  "file": "open",
+  "heading": "{sc}：开放式评测",
+  "row": "检测分支按规则（无语言模型）",
+  "col": "基础题：本文（4B） 减该行",
+  "what": "diff"
+ },
+ {
+  "macro": "openCountVsRule",
+  "src": "tables",
+  "file": "open",
+  "heading": "{sc}：开放式评测",
+  "row": "检测分支按规则（无语言模型）",
+  "col": "清点题：本文（4B） 减该行",
+  "what": "diff"
+ },
+ {
+  "macro": "openCountVsRulePt",
+  "src": "tables",
+  "file": "open",
+  "heading": "{sc}：开放式评测",
+  "row": "检测分支按规则（无语言模型）",
+  "col": "清点题：本文（4B） 减该行",
+  "what": "num"
+ },
+ {
+  "macro": "openEdge",
+  "src": "tables",
+  "file": "open",
+  "heading": "{sc}：开放式评测",
+  "row": "端侧配置，只读清单（2B，纳米分支）",
+  "col": "三类基础题合计",
+  "what": "num"
+ },
+ {
+  "macro": "openEdgeCi",
+  "src": "tables",
+  "file": "open",
+  "heading": "{sc}：开放式评测",
+  "row": "端侧配置，只读清单（2B，纳米分支）",
+  "col": "三类基础题合计",
+  "what": "ci"
+ },
+ {
+  "macro": "openEdgeCount",
+  "src": "tables",
+  "file": "open",
+  "heading": "{sc}：开放式评测",
+  "row": "端侧配置，只读清单（2B，纳米分支）",
+  "col": "清点",
+  "what": "num"
+ },
+ {
+  "macro": "openVsEdge",
+  "src": "tables",
+  "file": "open",
+  "heading": "{sc}：开放式评测",
+  "row": "端侧配置，只读清单（2B，纳米分支）",
+  "col": "基础题：本文（4B） 减该行",
+  "what": "diff"
+ },
+ {
+  "macro": "openCountVsEdge",
+  "src": "tables",
+  "file": "open",
+  "heading": "{sc}：开放式评测",
+  "row": "端侧配置，只读清单（2B，纳米分支）",
+  "col": "清点题：本文（4B） 减该行",
+  "what": "diff"
+ },
+ {
+  "macro": "presKept",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：答案为「是」的题",
+  "row": "干净",
+  "col": "清单里有该类的比例",
+  "what": "num"
+ },
+ {
+  "macro": "presMissOurs",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：答案为「是」的题",
+  "row": "干净",
+  "col": "本文（4B）：清单里有 / 没有",
+  "what": "num2"
+ },
+ {
+  "macro": "presMissList",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：答案为「是」的题",
+  "row": "干净",
+  "col": "只读清单（4B）：清单里有 / 没有",
+  "what": "num2"
+ },
+ {
+  "macro": "presMissAgg",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：答案为「是」的题",
+  "row": "干净",
+  "col": "检测分支 + 小汇总网络：清单里有 / 没有",
+  "what": "num2"
+ },
+ {
+  "macro": "presMissLo",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：答案为「是」的题",
+  "row": "干净",
+  "col": "整图 576 令牌（4B）：清单里有 / 没有",
+  "what": "num2"
+ },
+ {
+  "macro": "presMissHi",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：答案为「是」的题",
+  "row": "干净",
+  "col": "整图原始分辨率（4B）：清单里有 / 没有",
+  "what": "num2"
+ },
+ {
+  "macro": "presMissRule",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：答案为「是」的题",
+  "row": "干净",
+  "col": "检测分支按规则：清单里有 / 没有",
+  "what": "num2"
+ },
+ {
+  "macro": "wholeLoPt",
+  "src": "main",
+  "row": "整图 576 令牌（4B）",
+  "what": "dabs"
+ },
+ {
+  "macro": "wholeHiPt",
+  "src": "main",
+  "row": "整图原始分辨率（4B）",
+  "what": "dabs"
+ },
+ {
+  "macro": "dResPt",
+  "src": "res",
+  "row": "整图 576 令牌（4B）",
+  "what": "dabs"
+ },
+ {
+  "macro": "formHeldVsRulePt",
+  "src": "tables",
+  "file": "forms",
+  "heading": "{sc}：配对差值",
+  "pair": "本文，多问法训练（该问法未参与训练） − 人工规则读检测结果（每种问法各写一条）",
+  "what": "dabs"
+ },
+ {
+  "macro": "robSeenVsListPt",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "本文（4B） − 只读清单（4B）",
+  "label": "退化图像上",
+  "what": "dabs"
+ },
+ {
+  "macro": "robSeenVsNoAugPt",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "本文（4B） − 不做退化感知的对齐",
+  "label": "退化图像上",
+  "what": "dabs"
+ },
+ {
+  "macro": "ratioHiLo",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "rows": [
+   "整图原始分辨率（4B）",
+   "整图 576 令牌（4B）"
+  ],
+  "col": "端到端 ms",
+  "what": "ratio"
+ },
+ {
+  "macro": "ratioHiOurs",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "rows": [
+   "整图原始分辨率（4B）",
+   "本文（4B）"
+  ],
+  "col": "端到端 ms",
+  "what": "ratio"
+ },
+ {
+  "macro": "extraOursLoMs",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "rows": [
+   "本文（4B）",
+   "整图 576 令牌（4B）"
+  ],
+  "col": "端到端 ms",
+  "what": "minus"
+ },
+ {
+  "macro": "extraOursLoPct",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "rows": [
+   "本文（4B）",
+   "整图 576 令牌（4B）"
+  ],
+  "col": "端到端 ms",
+  "what": "pct"
+ },
+ {
+  "macro": "costIvlOursMs",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "本文（InternVL3.5-4B）",
+  "col": "端到端 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costIvlOursMem",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "本文（InternVL3.5-4B）",
+  "col": "峰值显存 GiB",
+  "what": "num"
+ },
+ {
+  "macro": "costIvlOneMs",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图一块（InternVL3.5-4B）",
+  "col": "端到端 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costIvlOneMem",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图一块（InternVL3.5-4B）",
+  "col": "峰值显存 GiB",
+  "what": "num"
+ },
+ {
+  "macro": "costIvlTileMs",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图动态切块（InternVL3.5-4B）",
+  "col": "端到端 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costIvlTileMem",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "整图动态切块（InternVL3.5-4B）",
+  "col": "峰值显存 GiB",
+  "what": "num"
+ },
+ {
+  "macro": "costBaseLoMs",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "未微调 Qwen3-VL-4B｜u576",
+  "col": "端到端 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costBaseLoMem",
+  "src": "tables",
+  "file": "cost_mem",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "未微调 Qwen3-VL-4B｜u576",
+  "col": "峰值显存 GiB",
+  "what": "num"
+ },
+ {
+  "macro": "costBaseHiMs",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "未微调 Qwen3-VL-4B｜u8192",
+  "col": "端到端 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costBaseHiMem",
+  "src": "tables",
+  "file": "cost_mem",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "未微调 Qwen3-VL-4B｜u8192",
+  "col": "峰值显存 GiB",
+  "what": "num"
+ },
+ {
+  "macro": "costIvlBaseOneMs",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "未微调 InternVL3.5-4B｜i1",
+  "col": "端到端 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costIvlBaseOneMem",
+  "src": "tables",
+  "file": "cost_mem",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "未微调 InternVL3.5-4B｜i1",
+  "col": "峰值显存 GiB",
+  "what": "num"
+ },
+ {
+  "macro": "costIvlBaseTileMs",
+  "src": "tables",
+  "file": "cost",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "未微调 InternVL3.5-4B｜i12",
+  "col": "端到端 ms",
+  "what": "num"
+ },
+ {
+  "macro": "costIvlBaseTileMem",
+  "src": "tables",
+  "file": "cost_mem",
+  "heading": "{sc}：单卡在线端到端代价",
+  "row": "未微调 InternVL3.5-4B｜i12",
+  "col": "峰值显存 GiB",
+  "what": "num"
+ },
+ {
+  "macro": "hiOverPruneHalf",
+  "src": "main",
+  "rows": [
+   "整图原始分辨率（4B）",
+   "整图原始分辨率，剪枝留 50%"
+  ],
+  "what": "gap"
+ },
+ {
+  "macro": "hiOverPruneTok",
+  "src": "main",
+  "rows": [
+   "整图原始分辨率（4B）",
+   "整图原始分辨率，剪到 576 个令牌"
+  ],
+  "what": "gap"
+ },
+ {
+  "macro": "presKeptDark",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：答案为「是」的题",
+  "row": "dark2",
+  "col": "清单里有该类的比例",
+  "what": "num"
+ },
+ {
+  "macro": "presMissRuleDark",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：答案为「是」的题",
+  "row": "dark2",
+  "col": "检测分支按规则：清单里有 / 没有",
+  "what": "num2"
+ },
+ {
+  "macro": "presMissAggDark",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：答案为「是」的题",
+  "row": "dark2",
+  "col": "检测分支 + 小汇总网络：清单里有 / 没有",
+  "what": "num2"
+ },
+ {
+  "macro": "presMissListDark",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：答案为「是」的题",
+  "row": "dark2",
+  "col": "只读清单（4B）：清单里有 / 没有",
+  "what": "num2"
+ },
+ {
+  "macro": "presMissOursDark",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：答案为「是」的题",
+  "row": "dark2",
+  "col": "本文（4B）：清单里有 / 没有",
+  "what": "num2"
+ },
+ {
+  "macro": "presMissLoDark",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：答案为「是」的题",
+  "row": "dark2",
+  "col": "整图 576 令牌（4B）：清单里有 / 没有",
+  "what": "num2"
+ },
+ {
+  "macro": "presMissHiDark",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：答案为「是」的题",
+  "row": "dark2",
+  "col": "整图原始分辨率（4B）：清单里有 / 没有",
+  "what": "num2"
+ },
+ {
+  "macro": "pixOneVsHi",
+  "src": "tables",
+  "file": "strata_pixels",
+  "heading": "{sc}：按原图像素数分层的准确率",
+  "scenarios": [
+   "ed"
+  ],
+  "pair": "本文（4B） − 整图原始分辨率（4B）",
+  "label": "≤1.5 百万像素"
+ },
+ {
+  "macro": "pixOneVsLo",
+  "src": "tables",
+  "file": "strata_pixels",
+  "heading": "{sc}：按原图像素数分层的准确率",
+  "scenarios": [
+   "ed"
+  ],
+  "pair": "本文（4B） − 整图 576 令牌（4B）",
+  "label": "≤1.5 百万像素"
+ },
+ {
+  "macro": "pixOneQ",
+  "src": "tables",
+  "file": "strata_pixels",
+  "heading": "{sc}：按原图像素数分层的准确率",
+  "scenarios": [
+   "ed"
+  ],
+  "col": "≤1.5 百万像素",
+  "what": "hdr_q"
+ },
+ {
+  "macro": "pixOneImg",
+  "src": "tables",
+  "file": "strata_pixels",
+  "heading": "{sc}：按原图像素数分层的准确率",
+  "scenarios": [
+   "ed"
+  ],
+  "col": "≤1.5 百万像素",
+  "what": "hdr_i"
+ },
+ {
+  "macro": "pixTwoVsHi",
+  "src": "tables",
+  "file": "strata_pixels",
+  "heading": "{sc}：按原图像素数分层的准确率",
+  "scenarios": [
+   "ed"
+  ],
+  "pair": "本文（4B） − 整图原始分辨率（4B）",
+  "label": "1.5–4 百万像素"
+ },
+ {
+  "macro": "pixTwoVsLo",
+  "src": "tables",
+  "file": "strata_pixels",
+  "heading": "{sc}：按原图像素数分层的准确率",
+  "scenarios": [
+   "ed"
+  ],
+  "pair": "本文（4B） − 整图 576 令牌（4B）",
+  "label": "1.5–4 百万像素"
+ },
+ {
+  "macro": "pixTwoQ",
+  "src": "tables",
+  "file": "strata_pixels",
+  "heading": "{sc}：按原图像素数分层的准确率",
+  "scenarios": [
+   "ed"
+  ],
+  "col": "1.5–4 百万像素",
+  "what": "hdr_q"
+ },
+ {
+  "macro": "pixTwoImg",
+  "src": "tables",
+  "file": "strata_pixels",
+  "heading": "{sc}：按原图像素数分层的准确率",
+  "scenarios": [
+   "ed"
+  ],
+  "col": "1.5–4 百万像素",
+  "what": "hdr_i"
+ },
+ {
+  "macro": "pixThreeVsHi",
+  "src": "tables",
+  "file": "strata_pixels",
+  "heading": "{sc}：按原图像素数分层的准确率",
+  "scenarios": [
+   "ed"
+  ],
+  "pair": "本文（4B） − 整图原始分辨率（4B）",
+  "label": "4–6 百万像素"
+ },
+ {
+  "macro": "pixThreeVsLo",
+  "src": "tables",
+  "file": "strata_pixels",
+  "heading": "{sc}：按原图像素数分层的准确率",
+  "scenarios": [
+   "ed"
+  ],
+  "pair": "本文（4B） − 整图 576 令牌（4B）",
+  "label": "4–6 百万像素"
+ },
+ {
+  "macro": "pixThreeQ",
+  "src": "tables",
+  "file": "strata_pixels",
+  "heading": "{sc}：按原图像素数分层的准确率",
+  "scenarios": [
+   "ed"
+  ],
+  "col": "4–6 百万像素",
+  "what": "hdr_q"
+ },
+ {
+  "macro": "pixThreeImg",
+  "src": "tables",
+  "file": "strata_pixels",
+  "heading": "{sc}：按原图像素数分层的准确率",
+  "scenarios": [
+   "ed"
+  ],
+  "col": "4–6 百万像素",
+  "what": "hdr_i"
+ },
+ {
+  "macro": "pixFourVsHi",
+  "src": "tables",
+  "file": "strata_pixels",
+  "heading": "{sc}：按原图像素数分层的准确率",
+  "scenarios": [
+   "ed"
+  ],
+  "pair": "本文（4B） − 整图原始分辨率（4B）",
+  "label": ">6 百万像素"
+ },
+ {
+  "macro": "pixFourVsLo",
+  "src": "tables",
+  "file": "strata_pixels",
+  "heading": "{sc}：按原图像素数分层的准确率",
+  "scenarios": [
+   "ed"
+  ],
+  "pair": "本文（4B） − 整图 576 令牌（4B）",
+  "label": ">6 百万像素"
+ },
+ {
+  "macro": "pixFourQ",
+  "src": "tables",
+  "file": "strata_pixels",
+  "heading": "{sc}：按原图像素数分层的准确率",
+  "scenarios": [
+   "ed"
+  ],
+  "col": ">6 百万像素",
+  "what": "hdr_q"
+ },
+ {
+  "macro": "pixFourImg",
+  "src": "tables",
+  "file": "strata_pixels",
+  "heading": "{sc}：按原图像素数分层的准确率",
+  "scenarios": [
+   "ed"
+  ],
+  "col": ">6 百万像素",
+  "what": "hdr_i"
+ },
+ {
+  "macro": "presYesRule",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：「是否存在」题按参考答案分开的准确率",
+  "row": "检测分支按规则",
+  "col": "答案为是（答错即漏报）",
+  "what": "num"
+ },
+ {
+  "macro": "presNoRule",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：「是否存在」题按参考答案分开的准确率",
+  "row": "检测分支按规则",
+  "col": "答案为否（答错即误报）",
+  "what": "num"
+ },
+ {
+  "macro": "presYesAgg",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：「是否存在」题按参考答案分开的准确率",
+  "row": "检测分支 + 小汇总网络",
+  "col": "答案为是（答错即漏报）",
+  "what": "num"
+ },
+ {
+  "macro": "presNoAgg",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：「是否存在」题按参考答案分开的准确率",
+  "row": "检测分支 + 小汇总网络",
+  "col": "答案为否（答错即误报）",
+  "what": "num"
+ },
+ {
+  "macro": "presYesList",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：「是否存在」题按参考答案分开的准确率",
+  "row": "只读清单（4B）",
+  "col": "答案为是（答错即漏报）",
+  "what": "num"
+ },
+ {
+  "macro": "presNoList",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：「是否存在」题按参考答案分开的准确率",
+  "row": "只读清单（4B）",
+  "col": "答案为否（答错即误报）",
+  "what": "num"
+ },
+ {
+  "macro": "presYesOurs",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：「是否存在」题按参考答案分开的准确率",
+  "row": "本文（4B）",
+  "col": "答案为是（答错即漏报）",
+  "what": "num"
+ },
+ {
+  "macro": "presNoOurs",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：「是否存在」题按参考答案分开的准确率",
+  "row": "本文（4B）",
+  "col": "答案为否（答错即误报）",
+  "what": "num"
+ },
+ {
+  "macro": "presYesLo",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：「是否存在」题按参考答案分开的准确率",
+  "row": "整图 576 令牌（4B）",
+  "col": "答案为是（答错即漏报）",
+  "what": "num"
+ },
+ {
+  "macro": "presNoLo",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：「是否存在」题按参考答案分开的准确率",
+  "row": "整图 576 令牌（4B）",
+  "col": "答案为否（答错即误报）",
+  "what": "num"
+ },
+ {
+  "macro": "presYesHi",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：「是否存在」题按参考答案分开的准确率",
+  "row": "整图原始分辨率（4B）",
+  "col": "答案为是（答错即漏报）",
+  "what": "num"
+ },
+ {
+  "macro": "presNoHi",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：「是否存在」题按参考答案分开的准确率",
+  "row": "整图原始分辨率（4B）",
+  "col": "答案为否（答错即误报）",
+  "what": "num"
+ },
+ {
+  "macro": "wholeLoDtab",
+  "src": "main",
+  "row": "整图 576 令牌（4B）",
+  "what": "dtab"
+ },
+ {
+  "macro": "wholeLoTab",
+  "src": "main",
+  "row": "整图 576 令牌（4B）",
+  "what": "acctab"
+ },
+ {
+  "macro": "wholeHiDtab",
+  "src": "main",
+  "row": "整图原始分辨率（4B）",
+  "what": "dtab"
+ },
+ {
+  "macro": "wholeHiTab",
+  "src": "main",
+  "row": "整图原始分辨率（4B）",
+  "what": "acctab"
+ },
+ {
+  "macro": "visDtab",
+  "src": "main",
+  "row": "整图原始分辨率，视觉编码器一并适配",
+  "what": "dtab"
+ },
+ {
+  "macro": "visTab",
+  "src": "main",
+  "row": "整图原始分辨率，视觉编码器一并适配",
+  "what": "acctab"
+ },
+ {
+  "macro": "pruneHalfDtab",
+  "src": "main",
+  "row": "整图原始分辨率，剪枝留 50%",
+  "what": "dtab"
+ },
+ {
+  "macro": "pruneHalfTab",
+  "src": "main",
+  "row": "整图原始分辨率，剪枝留 50%",
+  "what": "acctab"
+ },
+ {
+  "macro": "pruneTokDtab",
+  "src": "main",
+  "row": "整图原始分辨率，剪到 576 个令牌",
+  "what": "dtab"
+ },
+ {
+  "macro": "pruneTokTab",
+  "src": "main",
+  "row": "整图原始分辨率，剪到 576 个令牌",
+  "what": "acctab"
+ },
+ {
+  "macro": "ruleDtab",
+  "src": "main",
+  "row": "检测分支按规则",
+  "what": "dtab"
+ },
+ {
+  "macro": "ruleTab",
+  "src": "main",
+  "row": "检测分支按规则",
+  "what": "acctab"
+ },
+ {
+  "macro": "aggDtab",
+  "src": "main",
+  "row": "检测分支 + 小汇总网络",
+  "what": "dtab"
+ },
+ {
+  "macro": "aggTab",
+  "src": "main",
+  "row": "检测分支 + 小汇总网络",
+  "what": "acctab"
+ },
+ {
+  "macro": "listDtab",
+  "src": "main",
+  "row": "只读清单（4B）",
+  "what": "dtab"
+ },
+ {
+  "macro": "listTab",
+  "src": "main",
+  "row": "只读清单（4B）",
+  "what": "acctab"
+ },
+ {
+  "macro": "edgeThumbDtab",
+  "src": "main",
+  "row": "端侧配置，带缩略图（2B，纳米分支）",
+  "what": "dtab"
+ },
+ {
+  "macro": "edgeThumbTab",
+  "src": "main",
+  "row": "端侧配置，带缩略图（2B，纳米分支）",
+  "what": "acctab"
+ },
+ {
+  "macro": "edgeDtab",
+  "src": "main",
+  "row": "端侧配置，只读清单（2B，纳米分支）",
+  "what": "dtab"
+ },
+ {
+  "macro": "edgeTab",
+  "src": "main",
+  "row": "端侧配置，只读清单（2B，纳米分支）",
+  "what": "acctab"
+ },
+ {
+  "macro": "ablGtDtab",
+  "src": "main",
+  "row": "人工框清单训练",
+  "what": "dtab"
+ },
+ {
+  "macro": "ablGtTab",
+  "src": "main",
+  "row": "人工框清单训练",
+  "what": "acctab"
+ },
+ {
+  "macro": "ablInsDtab",
+  "src": "main",
+  "row": "样本内清单训练",
+  "what": "dtab"
+ },
+ {
+  "macro": "ablInsTab",
+  "src": "main",
+  "row": "样本内清单训练",
+  "what": "acctab"
+ },
+ {
+  "macro": "ablNoAugDtab",
+  "src": "main",
+  "row": "不做退化感知的对齐",
+  "what": "dtab"
+ },
+ {
+  "macro": "ablNoAugTab",
+  "src": "main",
+  "row": "不做退化感知的对齐",
+  "what": "acctab"
+ },
+ {
+  "macro": "ablImgAugDtab",
+  "src": "main",
+  "row": "只退化图像，清单取干净图像",
+  "what": "dtab"
+ },
+ {
+  "macro": "ablImgAugTab",
+  "src": "main",
+  "row": "只退化图像，清单取干净图像",
+  "what": "acctab"
+ },
+ {
+  "macro": "ablThumbDtab",
+  "src": "main",
+  "row": "缩略图 256 令牌",
+  "what": "dtab"
+ },
+ {
+  "macro": "ablWordingDtab",
+  "src": "main",
+  "row": "标准文字清单",
+  "what": "dtab"
+ },
+ {
+  "macro": "priorDtab",
+  "src": "main",
+  "row": "最接近已有工作的接口",
+  "what": "dtab"
+ },
+ {
+  "macro": "priorTab",
+  "src": "main",
+  "row": "最接近已有工作的接口",
+  "what": "acctab"
+ },
+ {
+  "macro": "oursNanoDtab",
+  "src": "main",
+  "row": "4B，纳米分支，带缩略图",
+  "what": "dtab"
+ },
+ {
+  "macro": "oursSmallDtab",
+  "src": "main",
+  "row": "2B，中型分支，带缩略图",
+  "what": "dtab"
+ },
+ {
+  "macro": "robSeenVsNoAugDtab",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "本文（4B） − 不做退化感知的对齐",
+  "label": "退化图像上",
+  "what": "dtab"
+ },
+ {
+  "macro": "robSeenVsImgAugDtab",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "本文（4B） − 只退化图像，清单取干净图像",
+  "label": "退化图像上",
+  "what": "dtab"
+ },
+ {
+  "macro": "robSeenVsThumbDtab",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "本文（4B） − 缩略图 256 令牌",
+  "label": "退化图像上",
+  "what": "dtab"
+ },
+ {
+  "macro": "robSeenVsListDtab",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "本文（4B） − 只读清单（4B）",
+  "label": "退化图像上",
+  "what": "dtab"
+ },
+ {
+  "macro": "robSeenVsHiDtab",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "本文（4B） − 整图原始分辨率（4B）",
+  "label": "退化图像上",
+  "what": "dtab"
+ },
+ {
+  "macro": "robSeenVsLoDtab",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "本文（4B） − 整图 576 令牌（4B）",
+  "label": "退化图像上",
+  "what": "dtab"
+ },
+ {
+  "macro": "pubOurs",
+  "src": "p30",
+  "system": "ours"
+ },
+ {
+  "macro": "pubIns",
+  "src": "p30",
+  "system": "ins"
+ },
+ {
+  "macro": "pubGt",
+  "src": "p30",
+  "system": "gt"
+ },
+ {
+  "macro": "pubWhole",
+  "src": "p30",
+  "system": "w576"
+ },
+ {
+  "macro": "pubRule",
+  "src": "p30",
+  "system": "rules"
+ },
+ {
+  "macro": "pubInsDtab",
+  "src": "p30",
+  "pair": "ours-ins",
+  "what": "dtab"
+ },
+ {
+  "macro": "pubGtDtab",
+  "src": "p30",
+  "pair": "ours-gt",
+  "what": "dtab"
+ },
+ {
+  "macro": "pubWholeDtab",
+  "src": "p30",
+  "pair": "ours-w576",
+  "what": "dtab"
+ },
+ {
+  "macro": "pubRuleDtab",
+  "src": "p30",
+  "pair": "ours-rules",
+  "what": "dtab"
+ },
+ {
+  "macro": "pubWholeDiff",
+  "src": "p30",
+  "pair": "ours-w576",
+  "what": "diff"
+ },
+ {
+  "macro": "pubInsGtDiff",
+  "src": "p30",
+  "pair": "ins-gt",
+  "what": "diff"
+ },
+ {
+  "macro": "ablGtSig",
+  "src": "main",
+  "row": "人工框清单训练",
+  "what": "dsig"
+ },
+ {
+  "macro": "ablInsSig",
+  "src": "main",
+  "row": "样本内清单训练",
+  "what": "dsig"
+ },
+ {
+  "macro": "ablNoAugSig",
+  "src": "main",
+  "row": "不做退化感知的对齐",
+  "what": "dsig"
+ },
+ {
+  "macro": "ablImgAugSig",
+  "src": "main",
+  "row": "只退化图像，清单取干净图像",
+  "what": "dsig"
+ },
+ {
+  "macro": "ablThumbSig",
+  "src": "main",
+  "row": "缩略图 256 令牌",
+  "what": "dsig"
+ },
+ {
+  "macro": "ablWordingSig",
+  "src": "main",
+  "row": "标准文字清单",
+  "what": "dsig"
+ },
+ {
+  "macro": "priorSig",
+  "src": "main",
+  "row": "最接近已有工作的接口",
+  "what": "dsig"
+ },
+ {
+  "macro": "oursNanoSig",
+  "src": "main",
+  "row": "4B，纳米分支，带缩略图",
+  "what": "dsig"
+ },
+ {
+  "macro": "oursSmallSig",
+  "src": "main",
+  "row": "2B，中型分支，带缩略图",
+  "what": "dsig"
+ },
+ {
+  "macro": "robSeenVsNoAugSig",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "本文（4B） − 不做退化感知的对齐",
+  "label": "退化图像上",
+  "what": "dsig"
+ },
+ {
+  "macro": "robSeenVsImgAugSig",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "本文（4B） − 只退化图像，清单取干净图像",
+  "label": "退化图像上",
+  "what": "dsig"
+ },
+ {
+  "macro": "robSeenVsThumbSig",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "本文（4B） − 缩略图 256 令牌",
+  "label": "退化图像上",
+  "what": "dsig"
+ },
+ {
+  "macro": "pubInsSig",
+  "src": "p30",
+  "pair": "ours-ins",
+  "what": "dsig"
+ },
+ {
+  "macro": "pubGtSig",
+  "src": "p30",
+  "pair": "ours-gt",
+  "what": "dsig"
+ },
+ {
+  "macro": "presFoundRule",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：答案为「是」的题",
+  "row": "干净",
+  "col": "检测分支按规则：清单里有 / 没有",
+  "what": "num"
+ },
+ {
+  "macro": "presFoundAgg",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：答案为「是」的题",
+  "row": "干净",
+  "col": "检测分支 + 小汇总网络：清单里有 / 没有",
+  "what": "num"
+ },
+ {
+  "macro": "presFoundList",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：答案为「是」的题",
+  "row": "干净",
+  "col": "只读清单（4B）：清单里有 / 没有",
+  "what": "num"
+ },
+ {
+  "macro": "presFoundOurs",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：答案为「是」的题",
+  "row": "干净",
+  "col": "本文（4B）：清单里有 / 没有",
+  "what": "num"
+ },
+ {
+  "macro": "presFoundLo",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：答案为「是」的题",
+  "row": "干净",
+  "col": "整图 576 令牌（4B）：清单里有 / 没有",
+  "what": "num"
+ },
+ {
+  "macro": "presFoundHi",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：答案为「是」的题",
+  "row": "干净",
+  "col": "整图原始分辨率（4B）：清单里有 / 没有",
+  "what": "num"
+ },
+ {
+  "macro": "presFoundRuleDark",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：答案为「是」的题",
+  "row": "dark2",
+  "col": "检测分支按规则：清单里有 / 没有",
+  "what": "num"
+ },
+ {
+  "macro": "presFoundAggDark",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：答案为「是」的题",
+  "row": "dark2",
+  "col": "检测分支 + 小汇总网络：清单里有 / 没有",
+  "what": "num"
+ },
+ {
+  "macro": "presFoundListDark",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：答案为「是」的题",
+  "row": "dark2",
+  "col": "只读清单（4B）：清单里有 / 没有",
+  "what": "num"
+ },
+ {
+  "macro": "presFoundOursDark",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：答案为「是」的题",
+  "row": "dark2",
+  "col": "本文（4B）：清单里有 / 没有",
+  "what": "num"
+ },
+ {
+  "macro": "presFoundLoDark",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：答案为「是」的题",
+  "row": "dark2",
+  "col": "整图 576 令牌（4B）：清单里有 / 没有",
+  "what": "num"
+ },
+ {
+  "macro": "presFoundHiDark",
+  "src": "tables",
+  "file": "presence",
+  "heading": "{sc}：答案为「是」的题",
+  "row": "dark2",
+  "col": "整图原始分辨率（4B）：清单里有 / 没有",
+  "what": "num"
+ },
+ {
+  "macro": "visPt",
+  "src": "main",
+  "row": "整图原始分辨率，视觉编码器一并适配",
+  "what": "dabs"
+ },
+ {
+  "macro": "rulePt",
+  "src": "main",
+  "row": "检测分支按规则",
+  "what": "dabs"
+ },
+ {
+  "macro": "aggPt",
+  "src": "main",
+  "row": "检测分支 + 小汇总网络",
+  "what": "dabs"
+ },
+ {
+  "macro": "listPt",
+  "src": "main",
+  "row": "只读清单（4B）",
+  "what": "dabs"
+ },
+ {
+  "macro": "ablGtPt",
+  "src": "main",
+  "row": "人工框清单训练",
+  "what": "dabs"
+ },
+ {
+  "macro": "edgeThumbPt",
+  "src": "main",
+  "row": "端侧配置，带缩略图（2B，纳米分支）",
+  "what": "dabs"
+ },
+ {
+  "macro": "edgePt",
+  "src": "main",
+  "row": "端侧配置，只读清单（2B，纳米分支）",
+  "what": "dabs"
+ },
+ {
+  "macro": "ablInsPt",
+  "src": "main",
+  "row": "样本内清单训练",
+  "what": "dabs"
+ },
+ {
+  "macro": "priorPt",
+  "src": "main",
+  "row": "最接近已有工作的接口",
+  "what": "dabs"
+ },
+ {
+  "macro": "oursNanoPt",
+  "src": "main",
+  "row": "4B，纳米分支，带缩略图",
+  "what": "dabs"
+ },
+ {
+  "macro": "oursSmallPt",
+  "src": "main",
+  "row": "2B，中型分支，带缩略图",
+  "what": "dabs"
+ },
+ {
+  "macro": "ablThumbPt",
+  "src": "main",
+  "row": "缩略图 256 令牌",
+  "what": "dabs"
+ },
+ {
+  "macro": "robSeenVsImgAugPt",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "本文（4B） − 只退化图像，清单取干净图像",
+  "label": "退化图像上",
+  "what": "dabs"
+ },
+ {
+  "macro": "robSeenVsThumbPt",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "本文（4B） − 缩略图 256 令牌",
+  "label": "退化图像上",
+  "what": "dabs"
+ },
+ {
+  "macro": "robSeenVsHiPt",
+  "src": "tables",
+  "file": "robust_seen",
+  "heading": "{sc}：配对差值，6 种",
+  "pair": "本文（4B） − 整图原始分辨率（4B）",
+  "label": "退化图像上",
+  "what": "dabs"
+ },
+ {
+  "macro": "tierTwoTowerAll",
+  "src": "tables",
+  "file": "tier2",
+  "heading": "留出 TaDiao",
+  "row": "分流后整系统（Tier 2 + 本文）",
+  "col": "全部",
+  "what": "num",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "tierTwoTowerLoco",
+  "src": "tables",
+  "file": "tier2",
+  "heading": "留出 TaDiao",
+  "row": "本文（训练时没有该类）",
+  "col": "全部",
+  "what": "num",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "tierTwoMachAll",
+  "src": "tables",
+  "file": "tier2",
+  "heading": "留出 ShiGongJiXie",
+  "row": "分流后整系统（Tier 2 + 本文）",
+  "col": "全部",
+  "what": "num",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "tierTwoMachLoco",
+  "src": "tables",
+  "file": "tier2",
+  "heading": "留出 ShiGongJiXie",
+  "row": "本文（训练时没有该类）",
+  "col": "全部",
+  "what": "num",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "tierTwoTowerGainPt",
+  "src": "tables",
+  "file": "tier2",
+  "heading": "留出 TaDiao",
+  "pair": "分流后整系统 − 本文（训练时没有该类）",
+  "label": "全部",
+  "what": "dabs",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "tierTwoMachLossPt",
+  "src": "tables",
+  "file": "tier2",
+  "heading": "留出 ShiGongJiXie",
+  "pair": "分流后整系统 − 本文（训练时没有该类）",
+  "label": "全部",
+  "what": "dabs",
+  "scenarios": [
+   "ed"
+  ]
+ },
+ {
+  "macro": "strataVsLoOne",
+  "src": "tables",
+  "file": "strata_size",
+  "heading": "{sc}：按题目证据占画面",
+  "pair": "本文（4B） − 整图 576 令牌（4B）",
+  "label": "<0.2%",
+  "what": "dsig"
+ },
+ {
+  "macro": "strataVsLoTwo",
+  "src": "tables",
+  "file": "strata_size",
+  "heading": "{sc}：按题目证据占画面",
+  "pair": "本文（4B） − 整图 576 令牌（4B）",
+  "label": "0.2–0.5%",
+  "what": "dsig"
+ },
+ {
+  "macro": "strataVsLoThree",
+  "src": "tables",
+  "file": "strata_size",
+  "heading": "{sc}：按题目证据占画面",
+  "pair": "本文（4B） − 整图 576 令牌（4B）",
+  "label": "0.5–1%",
+  "what": "dsig"
+ },
+ {
+  "macro": "strataVsLoFour",
+  "src": "tables",
+  "file": "strata_size",
+  "heading": "{sc}：按题目证据占画面",
+  "pair": "本文（4B） − 整图 576 令牌（4B）",
+  "label": "1–5%",
+  "what": "dsig"
+ },
+ {
+  "macro": "strataVsLoFive",
+  "src": "tables",
+  "file": "strata_size",
+  "heading": "{sc}：按题目证据占画面",
+  "pair": "本文（4B） − 整图 576 令牌（4B）",
+  "label": "≥5%",
+  "what": "dsig"
+ },
+ {
+  "macro": "strataVsHiOne",
+  "src": "tables",
+  "file": "strata_size",
+  "heading": "{sc}：按题目证据占画面",
+  "pair": "本文（4B） − 整图原始分辨率（4B）",
+  "label": "<0.2%",
+  "what": "dsig"
+ },
+ {
+  "macro": "strataVsHiTwo",
+  "src": "tables",
+  "file": "strata_size",
+  "heading": "{sc}：按题目证据占画面",
+  "pair": "本文（4B） − 整图原始分辨率（4B）",
+  "label": "0.2–0.5%",
+  "what": "dsig"
+ },
+ {
+  "macro": "strataVsHiThree",
+  "src": "tables",
+  "file": "strata_size",
+  "heading": "{sc}：按题目证据占画面",
+  "pair": "本文（4B） − 整图原始分辨率（4B）",
+  "label": "0.5–1%",
+  "what": "dsig"
+ },
+ {
+  "macro": "strataVsHiFour",
+  "src": "tables",
+  "file": "strata_size",
+  "heading": "{sc}：按题目证据占画面",
+  "pair": "本文（4B） − 整图原始分辨率（4B）",
+  "label": "1–5%",
+  "what": "dsig"
+ },
+ {
+  "macro": "strataVsHiFive",
+  "src": "tables",
+  "file": "strata_size",
+  "heading": "{sc}：按题目证据占画面",
+  "pair": "本文（4B） − 整图原始分辨率（4B）",
+  "label": "≥5%",
+  "what": "dsig"
+ },
+ {
+  "macro": "strataNOne",
+  "src": "tables",
+  "file": "strata_size",
+  "heading": "{sc}：按题目证据占画面",
+  "col": "<0.2%",
+  "what": "hdr_q"
+ },
+ {
+  "macro": "strataNTwo",
+  "src": "tables",
+  "file": "strata_size",
+  "heading": "{sc}：按题目证据占画面",
+  "col": "0.2–0.5%",
+  "what": "hdr_q"
+ },
+ {
+  "macro": "strataNThree",
+  "src": "tables",
+  "file": "strata_size",
+  "heading": "{sc}：按题目证据占画面",
+  "col": "0.5–1%",
+  "what": "hdr_q"
+ },
+ {
+  "macro": "strataNFour",
+  "src": "tables",
+  "file": "strata_size",
+  "heading": "{sc}：按题目证据占画面",
+  "col": "1–5%",
+  "what": "hdr_q"
+ },
+ {
+  "macro": "strataNFive",
+  "src": "tables",
+  "file": "strata_size",
+  "heading": "{sc}：按题目证据占画面",
+  "col": "≥5%",
+  "what": "hdr_q"
+ },
+ {
+  "macro": "clsParVsHiPt",
+  "src": "tables",
+  "file": "byclass",
+  "heading": "{sc}：本文（4B） 减其他行",
+  "pair": "本文（4B） − 整图原始分辨率（4B）",
+  "label": "并线线夹保护壳缺失",
+  "what": "dabs",
+  "scenarios": [
+   "td"
+  ]
+ },
+ {
+  "macro": "clsStrVsHiPt",
+  "src": "tables",
+  "file": "byclass",
+  "heading": "{sc}：本文（4B） 减其他行",
+  "pair": "本文（4B） − 整图原始分辨率（4B）",
+  "label": "耐张线夹保护壳缺失",
+  "what": "dabs",
+  "scenarios": [
+   "td"
+  ]
+ }
+]

@@ -1,0 +1,37 @@
+{
+ "_about": "Candidates and the serialized candidate list read by the language model.",
+ "candidates": {
+  "min_confidence": 0.02,
+  "nms_iou": 0.6,
+  "max_candidates": 12,
+  "_source": "powerbrain/verify.py:68 select(detections, min_conf=0.02, nms=0.6, k=12); :619 defaults of `verify.py cands`"
+ },
+ "list": {
+  "max_candidates_K": 8,
+  "min_confidence": 0.05,
+  "format": 3,
+  "mode": "text",
+  "_source": "powerbrain/verify.py:638 defaults of `verify.py evidence` (--k 8, --min-conf 0.05); FMT=3 (configs/training.json); mode text in scripts/pub_insplad.sh:69"
+ },
+ "format_3_lines": {
+  "lead_in": "检测候选（类别 置信度 左,上,右,下%；可能含误检和重复）：",
+  "line": "<class name> <confidence with 2 decimals> <left>,<top>,<right>,<bottom> (percent of the frame)",
+  "empty_list": "检测候选：无",
+  "_source": "powerbrain/core.py:324 (empty list), :329-331 (line format and lead-in)"
+ },
+ "thumbnail": {
+  "text_after_image": "以上是整幅图像的缩略图。",
+  "token_side_px": 32,
+  "_source": "powerbrain/core.py:31 (THUMB_TEXT), :26 (CELL = 32 px per token side)"
+ },
+ "rules_baseline": {
+  "raw_detections_min_confidence": 0.01,
+  "_source": "powerbrain/detector.py:109 (model.predict(..., conf=0.01))"
+ },
+ "prior_interface_row": {
+  "format": 2,
+  "min_confidence": 0.3,
+  "confidences_written": false,
+  "_source": "scripts/final_round.sh:195"
+ }
+}
