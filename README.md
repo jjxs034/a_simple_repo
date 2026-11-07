@@ -1,10 +1,11 @@
-# PowerBrain: code, configuration and public-data materials
+# PowerBrain: code, configuration and reproduction materials
 
 Anonymous release for the review of the paper "PowerBrain: A Detector-Grounded Multimodal Large Language Model for
 Efficient Power Line Inspection on Edge Devices". It contains the code of every experiment, the training and evaluation
-configuration, the Chinese prompts, and, for the public InsPLAD data, the question sets, the candidate lists, the
-per-question outputs and the trained adapters. The two inspection datasets of the paper, ED and TD, are provided
-under an agreement with the company and cannot be released (see "Not included").
+configuration, the Chinese prompts, the question rules (implemented in `powerbrain/bench.py`), the InsPLAD question sets,
+candidate lists, per-question outputs and adapters, and de-identified per-question records of the ED and TD runs. The ED
+and TD images and annotations are provided under an agreement with the company and cannot be released (see "Not
+included").
 
 ## Contents
 
@@ -12,15 +13,15 @@ under an agreement with the company and cannot be released (see "Not included").
 |---|---|
 | `powerbrain/` | Pipeline, training, evaluation and report scripts (Python) |
 | `edge/` | Conversion for the RK3588 board and the board-side measurement scripts |
-| `scripts/` | `final_round.sh` (all ED/TD runs of the paper), `freeze_final.sh` (all tables from the per-question outputs), `pub_insplad.sh` (the InsPLAD replication) |
+| `scripts/` | `final_round.sh` (all ED/TD runs of the paper), `run_eval3.sh` (its evaluation step), `freeze_final.sh` (all tables from the per-question outputs), `pub_insplad.sh` (the InsPLAD replication) |
 | `configs/` | `training.json`, `candidate_list.json`, `degradations.json`: every setting, with the file and line it comes from |
 | `prompts/prompts_zh.md` | The Chinese prompts and three complete examples |
 | `data/insplad/bench/` | InsPLAD question sets, cross-fitting fold groups and candidate lists |
 | `data/insplad/results/` | InsPLAD per-question outputs of the five systems and their summary |
+| `data/edtd/` | De-identified per-question records of the ED and TD runs |
+| `adapters/insplad/` | The four InsPLAD adapters, each split into two parts |
 | `requirements.txt` | Python packages of the experiment environment |
-
-The four InsPLAD adapters are larger than the file limit of the repository and are published separately, see
-"Adapters".
+| `LICENSE`, `DATA_LICENSE.md`, `LICENSES/` | Licences (see the last section) |
 
 ## Setup
 
@@ -73,6 +74,58 @@ rewrites them together).
 | `pl_w576` | 576-token whole image | 92.5 | Table IV note; Section III-B (+1.6, 0.6 to 2.6) |
 | `pl_detector` | detector with rules | 92.5 | summary only |
 
+## InsPLAD adapters
+
+All adapters are LoRA adapters of the language model (`configs/training.json`), stored in float32 as trained. Each
+archive holds `adapter_model.safetensors`, `adapter_config.json`, `train_args.json` (paths shown relative to the work
+folder `$PUB` of `scripts/pub_insplad.sh`) and the PEFT model card; only the path fields were changed. The archives
+are split into parts of at most 90 MiB. To rebuild and check them:
+
+```
+cd adapters/insplad
+for a in pl_one576 pl_abl_ins pl_abl_gt pl_w576; do cat insplad_adapter_$a.tar.part-* > insplad_adapter_$a.tar; done && sha256sum -c SHA256SUMS
+```
+
+| Archive | Bytes | sha256 | Produces |
+|---|---|---|---|
+| `insplad_adapter_pl_one576.tar` | 132,208,640 | `dcdf7a91325df7ca8dee804c61d28a4a98c4428a9369ff5a9acd9968500c07da` | `results/pl_one576` |
+| `insplad_adapter_pl_abl_ins.tar` | 132,208,640 | `7464af426cbcd8a39046271a2982e4c7da92219a0b124b3e94988c1792f9c3e7` | `results/pl_abl_ins` |
+| `insplad_adapter_pl_abl_gt.tar` | 132,208,640 | `b0e983353b5540533839d5eb05632252ff25246002c164d99e4b03dd2bfffa84` | `results/pl_abl_gt` |
+| `insplad_adapter_pl_w576.tar` | 132,208,640 | `3e3ef18f968a1bbf4203b693684dce7a00889fe323d0cde284c7298081ca571a` | `results/pl_w576` |
+
+## ED and TD: de-identified per-question records
+
+`data/edtd/` holds one record per question and run of the ED and TD experiments, with no image, question text,
+option, reference answer, model answer, score, box or file name.
+
+| File | Columns |
+|---|---|
+| `questions.csv.gz` | `file`, `order`, `qh`, `ih`, `dataset`, `form`, `frame_size_bin`, `evidence_area_bin`, `near_duplicate` |
+| `outputs.csv.gz` | `run`, `system`, `seed`, `condition`, `policy`, `qh`, `correct` |
+| `outputs_rules.csv.gz` | the two rule rows of Table III, which the report scripts compute from detections |
+| `runs.json` | per run: system, seed, condition, files, records and input policies |
+
+- `qh` and `ih` are keyed hashes (HMAC-SHA256, first 16 hex digits) of the question and of the image; the key is not
+  released. Questions are listed in the order of the original question files, so the images enter the bootstrap in
+  the same order as in the paper and the intervals come out identical.
+- `condition` is `clean` or the degradation and its strength (for example `fog:2`). `run` is the name used by
+  `scripts/final_round.sh` and `scripts/freeze_final.sh`.
+- The three derived fields are coarse class labels: `frame_size_bin` (megapixels of the source image: <=1.5, 1.5-4,
+  4-6, >6), `evidence_area_bin` (share of the frame covered by the boxes of the asked class: <0.2%, 0.2-0.5%,
+  0.5-1%, 1-5%, >=5%), and `near_duplicate` for test images (0: no training or validation image within 26 bits of a
+  256-bit difference hash; 1: closest at 8 to 26 bits; 2: closest at 7 bits or fewer).
+
+To recompute the ED and TD numbers of Tables II-IV, Fig. 4 and the size, resolution, form and near-duplicate strata:
+
+```
+cd powerbrain
+python recompute_edtd.py --data ../data/edtd --out edtd_tables.json
+```
+
+On the authors' machine this reproduces all 1,689 compared entries of the frozen reports (accuracies, seed means and
+standard deviations, 95% intervals and paired differences), none different. The rows of Table V measured on the
+RK3588 board come from the aggregates of the board logs and are not in the per-question records.
+
 ## Reproduction
 
 ### 1. InsPLAD numbers from the released outputs (seconds, standard library only)
@@ -120,9 +173,10 @@ The question files are the ones of the paper; `python bench.py --scenarios pl --
 `fold_groups.json` maps every training image to its tower (`bench.tower_of`). A step whose output exists is
 skipped.
 
-### 4. Tables II-V and Fig. 4 on ED and TD
+### 4. How the ED and TD runs were produced
 
-These runs need the ED and TD data, which cannot be released. The scripts show every step:
+These runs need the ED and TD data. The scripts show every step; `scripts/final_round.sh` expects the code in
+`$PB_W/pb`, `run_eval3.sh` in `$PB_W` and a Python environment in `$PB_W/.venv`:
 
 - `scripts/final_round.sh` defines every run of the paper: candidate lists, the degradation plan of the training
   images, all adapters (three seeds for the main rows), evaluation on the clean and degraded test images, held-out
@@ -140,50 +194,35 @@ These runs need the ED and TD data, which cannot be released. The scripts show e
   `edge/p29_summary.py`, `edge/p29_compare.py`, `edge/p29_costfit.py` and `edge/boardnumbers.py` for the numbers. The
   operating-point sweep uses `edge/board_p31*.sh` and `edge/p31*_analysis.py`.
 
-[DECISION] Whether de-identified per-question correctness records of the ED and TD runs are added here.
-
 Comments in the code refer to pre-registered protocols by number (P16 to P32) and to the authors' run records under
 `docs/results/`; these notes are not part of the release.
 
-## How questions and answers are derived
+## Question rules
 
-Every answer is derived by fixed rules from the boxes that come with each dataset (`powerbrain/bench.py`); no
-answer is written by a model. A which-class question is asked only about an image whose boxes all belong to one
-class; its options are the five classes of ED or TD, or, among the 17 classes of InsPLAD, that class and four others
-drawn at random. A presence question asks whether a class is present, with yes and no in equal shares. A count
+Every answer is derived by fixed rules from the boxes that come with each dataset; the rules are implemented in
+`powerbrain/bench.py` (base forms), `powerbrain/bench_x.py` (further forms) and `powerbrain/openform.py` (forms without
+options), and the code is authoritative. A which-class question is asked only about an image whose boxes all belong to
+one class; its options are the five classes of ED or TD, or, among the 17 classes of InsPLAD, that class and four
+others drawn at random. A presence question asks whether a class is present, with yes and no in equal shares. A count
 question asks how many instances of a countable class are present, with the options 1, 2, 3 and 4 or more. One
-training image in ten is held out for validation by a hash of its file name.
-
-## Adapters
-
-All adapters are LoRA adapters of the language model (`configs/training.json`). The four InsPLAD adapters, one seed
-each, are published as separate files: [LINK]
-
-| File | Size (bytes) | sha256 | Produces |
-|---|---|---|---|
-| `insplad_adapter_pl_one576.tar` | 132,208,640 | `dcdf7a91325df7ca8dee804c61d28a4a98c4428a9369ff5a9acd9968500c07da` | `results/pl_one576` |
-| `insplad_adapter_pl_abl_ins.tar` | 132,208,640 | `7464af426cbcd8a39046271a2982e4c7da92219a0b124b3e94988c1792f9c3e7` | `results/pl_abl_ins` |
-| `insplad_adapter_pl_abl_gt.tar` | 132,208,640 | `b0e983353b5540533839d5eb05632252ff25246002c164d99e4b03dd2bfffa84` | `results/pl_abl_gt` |
-| `insplad_adapter_pl_w576.tar` | 132,208,640 | `3e3ef18f968a1bbf4203b693684dce7a00889fe323d0cde284c7298081ca571a` | `results/pl_w576` |
-
-Each archive holds `adapter_model.safetensors`, `adapter_config.json`, `train_args.json` (paths shown relative to
-the work folder `$PUB` of `scripts/pub_insplad.sh`) and the PEFT model card. Only path fields were changed; the weights
-are as trained. [DECISION] Whether the ED/TD adapters (4B and 2B, list-only and list + thumbnail, three seeds each)
-are added.
+training image in ten is held out for validation by a hash of its file name. No separate written annotation protocol
+exists.
 
 ## Not included
 
-- ED and TD images, annotations, question files, candidate lists and per-question outputs: provided under an agreement
-  with the company and cannot be released.
+- ED and TD images, annotations and boxes, question texts, reference and model answers, scores and file names: provided
+  under an agreement with the company and cannot be released.
+- The ED and TD adapters: trained on the company's data, and of no use without the ED and TD images.
 - Detector weights.
 - Raw board outputs.
-- A separate annotation protocol: the boxes come with the datasets, and the questions are derived from them by the
-  rules above.
 
-## Licences [DECISION]
+## Licences
 
-- Code: proposed AGPL-3.0, because `powerbrain/detector.py`, `powerbrain/branchstate.py`, `powerbrain/cost_pack.py` and
-  `edge/convert_detector.py` import Ultralytics, which is AGPL-3.0.
-- InsPLAD-derived files (questions, lists, outputs) and the InsPLAD adapters: Creative Commons
-  Attribution-NonCommercial 3.0 Unported, the licence of InsPLAD-det (DataCite record of DOI 10.17632/5n3fjgvfyz.1).
-- Base models: Qwen3-VL-4B-Instruct and Qwen3-VL-2B-Instruct are under Apache-2.0.
+- Code: GNU Affero General Public License v3.0 (`LICENSE`), because `powerbrain/detector.py`,
+  `powerbrain/branchstate.py`, `powerbrain/cost_pack.py` and `edge/convert_detector.py` use Ultralytics, which is
+  AGPL-3.0.
+- InsPLAD-derived files (`data/insplad/`) and the four InsPLAD adapters (`adapters/insplad/`): Creative Commons
+  Attribution Non Commercial 3.0 Unported, the licence of InsPLAD-det; see `DATA_LICENSE.md`.
+- Base models: Qwen3-VL-4B-Instruct and Qwen3-VL-2B-Instruct (Qwen Team) are licensed under the Apache License 2.0
+  (`LICENSES/Apache-2.0.txt`). The adapters are LoRA weights to be applied to Qwen3-VL-4B-Instruct; this
+  repository contains no base-model weights.
