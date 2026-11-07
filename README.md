@@ -96,7 +96,8 @@ for a in pl_one576 pl_abl_ins pl_abl_gt pl_w576; do cat insplad_adapter_$a.tar.p
 ## ED and TD: de-identified per-question records
 
 `data/edtd/` holds one record per question and run of the ED and TD experiments, with no image, question text,
-option, reference answer, model answer, score, box or file name.
+option, reference answer, model answer, score, box or file name. The records are licensed under CC BY-NC 4.0; the
+underlying ED and TD data are not released (see "Licences").
 
 | File | Columns |
 |---|---|
@@ -223,6 +224,9 @@ exists.
   AGPL-3.0.
 - InsPLAD-derived files (`data/insplad/`) and the four InsPLAD adapters (`adapters/insplad/`): Creative Commons
   Attribution Non Commercial 3.0 Unported, the licence of InsPLAD-det; see `DATA_LICENSE.md`.
+- ED and TD per-question records (`data/edtd/`): Creative Commons Attribution-NonCommercial 4.0 International
+  (CC BY-NC 4.0); attribution to the authors of the paper (names withheld during review). The licence covers only the
+  de-identified records; the underlying ED and TD data are not released and not covered (see `DATA_LICENSE.md`).
 - Base models: Qwen3-VL-4B-Instruct and Qwen3-VL-2B-Instruct (Qwen Team) are licensed under the Apache License 2.0
   (`LICENSES/Apache-2.0.txt`). The adapters are LoRA weights to be applied to Qwen3-VL-4B-Instruct; this
   repository contains no base-model weights.
