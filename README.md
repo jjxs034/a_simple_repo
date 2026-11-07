@@ -108,7 +108,8 @@ underlying ED and TD data are not released (see "Licences").
 
 - `qh` and `ih` are keyed hashes (HMAC-SHA256, first 16 hex digits) of the question and of the image; the key is not
   released. Questions are listed in the order of the original question files, so the images enter the bootstrap in
-  the same order as in the paper and the intervals come out identical.
+  the same order as in the paper and the intervals come out identical. In the `file` column, `ed_test_notTaDiao` is
+  the ED test set without the questions about the tower crane, used for the held-out hazard class experiment.
 - `condition` is `clean` or the degradation and its strength (for example `fog:2`). `run` is the name used by
   `scripts/final_round.sh` and `scripts/freeze_final.sh`.
 - The three derived fields are coarse class labels: `frame_size_bin` (megapixels of the source image: <=1.5, 1.5-4,
